@@ -1,3 +1,4 @@
+//Script de PhantomJS
 var webpage = require('webpage');
 var page = webpage.create();
 
