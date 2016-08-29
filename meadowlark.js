@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var fortune = require("./lib/fortune.js");
+var weather = require('./lib/getWeatherData.js');
 
 // set up handlebars view engine
 var handlebars = require('express3-handlebars').create({ defaultLayout:'main' });
@@ -13,6 +14,12 @@ app.set('port', process.env.PORT || 3000);
 app.use(function(req, res, next){
   res.locals.showTests = app.get('env') !== 'production' && req.query.test == '1';
   next();
+});
+
+app.use(function(req, res, next){
+    res.locals.partials = res.locals.partials || {};
+    res.locals.partials.weather = weather.getWeatherData();
+    next();
 });
 
 app.get('/', function(req, res){
@@ -33,7 +40,6 @@ app.get('/tours/hood-river', function(req, res){
 app.get('/tours/request-page-group', function(res, req){
     res.render('tours/request-page-group');
 });
-
 
 // custom 404 page
 app.use(function(req, res){
