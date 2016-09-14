@@ -47,12 +47,25 @@ app.get('/tours/hood-river', function(req, res){
     res.render('tours/hood-river');
 });
 
+app.get('/tours/request-page-group', function(res, req){
+    res.render('tours/request-page-group');
+});
+
 app.get('/jquery-test', function(req, res){
     res.render('jquery-test');
 });
 
-app.get('/tours/request-page-group', function(res, req){
-    res.render('tours/request-page-group');
+app.get('/nursery-rhyme', function(req, res){
+    res.render('nursery-rhyme');
+});
+
+app.get('/data/nursery-rhyme', function(req, res){
+    res.json({
+        animal: 'squirrel',
+        bodyPart: 'tail',
+        adjective: 'bushy',
+        noun: 'heck'
+    });
 });
 
 // custom 404 page
