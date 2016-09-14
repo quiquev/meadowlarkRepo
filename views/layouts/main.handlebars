@@ -6,10 +6,12 @@
       <link rel="stylesheet" href="/vendor/mocha.css">
     {{/if}}
     <script type="text/javascript" src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+    {{{_sections.head}}}
   </head>
   <body>
     <header><img src="/img/chivas.jpg" alt="Meadowlark Travel Logo"></header>
     {{{body}}}
+    {{{_sections.jquery}}}
     {{#if showTests}}
       <div id="mocha"></div>
       <script type="text/javascript" src="/vendor/mocha.js"></script>
