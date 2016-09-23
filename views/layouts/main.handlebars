@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Meadowlark Travel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
     {{#if showTests}}
       <link rel="stylesheet" href="/vendor/mocha.css">
     {{/if}}
@@ -9,7 +12,21 @@
     {{{_sections.head}}}
   </head>
   <body>
-    <header><img src="/img/chivas.jpg" alt="Meadowlark Travel Logo"></header>
+    <header>
+        <img src="/img/tesla_banner2.png" alt="Meadowlark Travel Logo">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/newsletter">Newsletter</a></li>
+                    <li><a href="/nursery-rhyme">Nursery Rhyme</a></li>
+                    <li><a href="/contest/vacation-photo">Vacation Photo</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     {{{body}}}
     {{{_sections.jquery}}}
     {{#if showTests}}
@@ -28,5 +45,6 @@
         mocha.run();
       </script>
     {{/if}}
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
