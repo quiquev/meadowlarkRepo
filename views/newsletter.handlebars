@@ -1,5 +1,5 @@
 <div class="formContainer">
-    <form class="form-horizontal newsletterForm" role="form" action="/process?form=newsletter" method="POST">
+    <form class="form-horizontal newsletterForm" role="form" action="/newsletter" method="POST">
         <input type="hidden" name="_csrf" value="{{csrf}}">
         <div class="form-group">
             <label for="fieldName" class="col-sm-2 control-label">Name</label>
@@ -20,29 +20,3 @@
         </div>
     </form>
 </div>
-
-{{#section 'jquery'}}
-    <script>
-        $(function(){
-            $('.newsletterForm').on('submit', function(evt){
-                evt.preventDefault();
-                var action = $(this).attr('action');
-                var $container = $(this).closest('.formContainer');
-                $.ajax({
-                    url: action,
-                    type: 'POST',
-                    success: function(data){
-                        if(data.success){
-                            $container.html('<h2>Thank you very fucking much.</h2>');
-                        }else{
-                            $container.html('There was a problem!');
-                        }
-                    },
-                    error: function(){
-                        $container.html('There was a problem.');
-                    }
-                });
-            });
-        });
-    </script>
-{{/section}}
