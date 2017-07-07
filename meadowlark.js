@@ -5,6 +5,7 @@ var weather = require('./lib/getWeatherData.js');
 var formidable = require('formidable');
 var jqupload = require('jquery-file-upload-middleware');
 var credentials = require('./lib/credentials.js');
+//var emailService = require('./lib/email.js')(credentials);
 
 // set up handlebars view engine
 var handlebars = require('express3-handlebars').create({
@@ -171,7 +172,11 @@ app.post('/newsletter', function(req, res){
 app.get('/newsletter/archive', function(req, res){
 	res.render('newsletter/archive');
 });
-
+/*
+app.get('/email', function(req, res){
+    res.render('home');
+});
+*/
 // custom 404 page
 app.use(function(req, res){
   res.status(404);

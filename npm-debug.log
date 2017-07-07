@@ -3,7 +3,7 @@
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
 1 verbose cli   '--save',
-1 verbose cli   'express-session' ]
+1 verbose cli   'nodemailer' ]
 2 info using npm@2.15.5
 3 info using node@v4.4.6
 4 verbose install initial load of C:\Users\lvillase\Documents\Node & Express\meadowlark\package.json
@@ -12,2156 +12,269 @@
 7 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\chai\package.json
 8 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\cookie-parser\package.json
 9 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express\package.json
-10 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express3-handlebars\package.json
-11 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\formidable\package.json
-12 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt\package.json
-13 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-cafe-mocha\package.json
-14 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-contrib-jshint\package.json
-15 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-exec\package.json
-16 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\imagemagick\package.json
-17 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\jquery-file-upload-middleware\package.json
-18 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\mocha\package.json
-19 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\phantomjs\package.json
-20 info package.json formidable@1.0.17 No license field.
-21 info package.json grunt-cafe-mocha@0.1.13 No license field.
-22 info package.json mocha@2.5.3 No README data
-23 info package.json express3-handlebars@0.5.2 No license field.
-24 info package.json imagemagick@0.1.3 No license field.
-25 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\package.json
-26 silly cache add args [ 'express-session', null ]
-27 verbose cache add spec express-session
-28 silly cache add parsed spec Result {
-28 silly cache add   raw: 'express-session',
-28 silly cache add   scope: null,
-28 silly cache add   name: 'express-session',
-28 silly cache add   rawSpec: '',
-28 silly cache add   spec: 'latest',
-28 silly cache add   type: 'tag' }
-29 silly addNamed express-session@latest
-30 verbose addNamed "latest" is being treated as a dist-tag for express-session
-31 info addNameTag [ 'express-session', 'latest' ]
-32 silly mapToRegistry name express-session
-33 silly mapToRegistry using default registry
-34 silly mapToRegistry registry https://registry.npmjs.org/
-35 silly mapToRegistry data Result {
-35 silly mapToRegistry   raw: 'express-session',
-35 silly mapToRegistry   scope: null,
-35 silly mapToRegistry   name: 'express-session',
-35 silly mapToRegistry   rawSpec: '',
-35 silly mapToRegistry   spec: 'latest',
-35 silly mapToRegistry   type: 'tag' }
-36 silly mapToRegistry uri https://registry.npmjs.org/express-session
-37 verbose addNameTag registry:https://registry.npmjs.org/express-session not in flight; fetching
-38 verbose request uri https://registry.npmjs.org/express-session
-39 verbose request no auth needed
-40 info attempt registry request try #1 at 15:52:01
-41 verbose request id 8db49cf6b96e0fc8
-42 http request GET https://registry.npmjs.org/express-session
-43 http 200 https://registry.npmjs.org/express-session
-44 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-44 verbose headers   etag: '"E1OOYXU6V5HNRQQWC5QHSCM1G"',
-44 verbose headers   'content-type': 'application/json',
-44 verbose headers   'content-encoding': 'gzip',
-44 verbose headers   'cache-control': 'max-age=300',
-44 verbose headers   'content-length': '18711',
-44 verbose headers   'accept-ranges': 'bytes',
-44 verbose headers   date: 'Wed, 28 Sep 2016 19:52:03 GMT',
-44 verbose headers   via: '1.1 varnish',
-44 verbose headers   age: '152',
-44 verbose headers   connection: 'keep-alive',
-44 verbose headers   'x-served-by': 'cache-jfk8141-JFK',
-44 verbose headers   'x-cache': 'HIT',
-44 verbose headers   'x-cache-hits': '1',
-44 verbose headers   'x-timer': 'S1475092323.286177,VS0,VE0',
-44 verbose headers   vary: 'Accept-Encoding' }
-45 silly get cb [ 200,
-45 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-45 silly get     etag: '"E1OOYXU6V5HNRQQWC5QHSCM1G"',
-45 silly get     'content-type': 'application/json',
-45 silly get     'content-encoding': 'gzip',
-45 silly get     'cache-control': 'max-age=300',
-45 silly get     'content-length': '18711',
-45 silly get     'accept-ranges': 'bytes',
-45 silly get     date: 'Wed, 28 Sep 2016 19:52:03 GMT',
-45 silly get     via: '1.1 varnish',
-45 silly get     age: '152',
-45 silly get     connection: 'keep-alive',
-45 silly get     'x-served-by': 'cache-jfk8141-JFK',
-45 silly get     'x-cache': 'HIT',
-45 silly get     'x-cache-hits': '1',
-45 silly get     'x-timer': 'S1475092323.286177,VS0,VE0',
-45 silly get     vary: 'Accept-Encoding' } ]
-46 verbose get saving express-session to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\express-session\.cache.json
-47 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-48 silly addNameTag next cb for express-session with tag latest
-49 silly addNamed express-session@1.14.1
-50 verbose addNamed "1.14.1" is a plain semver version for express-session
-51 silly mapToRegistry name express-session
-52 silly mapToRegistry using default registry
-53 silly mapToRegistry registry https://registry.npmjs.org/
-54 silly mapToRegistry data Result {
-54 silly mapToRegistry   raw: 'express-session',
-54 silly mapToRegistry   scope: null,
-54 silly mapToRegistry   name: 'express-session',
-54 silly mapToRegistry   rawSpec: '',
-54 silly mapToRegistry   spec: 'latest',
-54 silly mapToRegistry   type: 'tag' }
-55 silly mapToRegistry uri https://registry.npmjs.org/express-session
-56 verbose addRemoteTarball https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz not in flight; adding
-57 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz',
-57 verbose addRemoteTarball   '600364f0f6bf5dce32649e006770bdeee80aec99' ]
-58 info retry fetch attempt 1 at 15:52:03
-59 info attempt registry request try #1 at 15:52:03
-60 http fetch GET https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz
-61 http fetch 200 https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz
-62 silly fetchAndShaCheck shasum 600364f0f6bf5dce32649e006770bdeee80aec99
-63 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\express-session\-\express-session-1.14.1.tgz not in flight; adding
-64 verbose addTmpTarball already have metadata; skipping unpack for express-session@1.14.1
-65 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-66 silly cache afterAdd express-session@1.14.1
-67 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\express-session\1.14.1\package\package.json not in flight; writing
-68 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-69 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\express-session\1.14.1\package\package.json written
-70 silly install resolved [ { name: 'express-session',
-70 silly install resolved     version: '1.14.1',
-70 silly install resolved     description: 'Simple session middleware for Express',
-70 silly install resolved     author:
-70 silly install resolved      { name: 'TJ Holowaychuk',
-70 silly install resolved        email: 'tj@vision-media.ca',
-70 silly install resolved        url: 'http://tjholowaychuk.com' },
-70 silly install resolved     contributors: [ [Object], [Object] ],
-70 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/session' },
-70 silly install resolved     license: 'MIT',
-70 silly install resolved     dependencies:
-70 silly install resolved      { cookie: '0.3.1',
-70 silly install resolved        'cookie-signature': '1.0.6',
-70 silly install resolved        crc: '3.4.0',
-70 silly install resolved        debug: '~2.2.0',
-70 silly install resolved        depd: '~1.1.0',
-70 silly install resolved        'on-headers': '~1.0.1',
-70 silly install resolved        parseurl: '~1.3.1',
-70 silly install resolved        'uid-safe': '~2.1.2',
-70 silly install resolved        'utils-merge': '1.0.0' },
-70 silly install resolved     devDependencies:
-70 silly install resolved      { after: '0.8.2',
-70 silly install resolved        'cookie-parser': '1.4.3',
-70 silly install resolved        express: '4.14.0',
-70 silly install resolved        istanbul: '0.4.5',
-70 silly install resolved        mocha: '2.5.3',
-70 silly install resolved        supertest: '1.1.0' },
-70 silly install resolved     files: [ 'session/', 'HISTORY.md', 'LICENSE', 'index.js' ],
-70 silly install resolved     engines: { node: '>= 0.8.0' },
-70 silly install resolved     scripts:
-70 silly install resolved      { test: 'mocha --bail --reporter spec test/',
-70 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/',
-70 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec test/' },
-70 silly install resolved     gitHead: '19b8f725d924035574d71e22bcb0a7d06c09ae80',
-70 silly install resolved     bugs: { url: 'https://github.com/expressjs/session/issues' },
-70 silly install resolved     homepage: 'https://github.com/expressjs/session',
-70 silly install resolved     _id: 'express-session@1.14.1',
-70 silly install resolved     _shasum: '600364f0f6bf5dce32649e006770bdeee80aec99',
-70 silly install resolved     _from: 'express-session@latest',
-70 silly install resolved     _npmVersion: '1.4.28',
-70 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-70 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
-70 silly install resolved     dist:
-70 silly install resolved      { shasum: '600364f0f6bf5dce32649e006770bdeee80aec99',
-70 silly install resolved        tarball: 'https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz' },
-70 silly install resolved     _npmOperationalInternal:
-70 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
-70 silly install resolved        tmp: 'tmp/express-session-1.14.1.tgz_1472059273028_0.5192838909570128' },
-70 silly install resolved     directories: {},
-70 silly install resolved     _resolved: 'https://registry.npmjs.org/express-session/-/express-session-1.14.1.tgz' } ]
-71 info install express-session@1.14.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark
-72 info installOne express-session@1.14.1
-73 verbose installOne of express-session to C:\Users\lvillase\Documents\Node & Express\meadowlark not in flight; installing
-74 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-75 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\express-session-c65fcc400ecc02c1.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-76 silly install write writing express-session 1.14.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-77 verbose unbuild node_modules\express-session
-78 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-79 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-80 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\express-session\1.14.1\package.tgz
-81 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-82 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session is being purged
-83 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-84 silly gunzTarPerm modes [ '777', '666' ]
-85 silly gunzTarPerm extractEntry package.json
-86 silly gunzTarPerm extractEntry README.md
-87 silly gunzTarPerm extractEntry LICENSE
-88 silly gunzTarPerm extractEntry index.js
-89 silly gunzTarPerm extractEntry HISTORY.md
-90 silly gunzTarPerm extractEntry session/cookie.js
-91 silly gunzTarPerm extractEntry session/memory.js
-92 silly gunzTarPerm extractEntry session/session.js
-93 silly gunzTarPerm extractEntry session/store.js
-94 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\package.json
-95 info preinstall express-session@1.14.1
-96 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\package.json
-97 silly prepareForInstallMany adding cookie@0.3.1 from express-session dependencies
-98 silly prepareForInstallMany adding cookie-signature@1.0.6 from express-session dependencies
-99 silly prepareForInstallMany adding crc@3.4.0 from express-session dependencies
-100 silly prepareForInstallMany adding debug@~2.2.0 from express-session dependencies
-101 silly prepareForInstallMany adding depd@~1.1.0 from express-session dependencies
-102 silly prepareForInstallMany adding on-headers@~1.0.1 from express-session dependencies
-103 silly prepareForInstallMany adding parseurl@~1.3.1 from express-session dependencies
-104 silly prepareForInstallMany adding uid-safe@~2.1.2 from express-session dependencies
-105 silly prepareForInstallMany adding utils-merge@1.0.0 from express-session dependencies
-106 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\package.json
-107 silly cache add args [ 'crc@3.4.0', null ]
-108 verbose cache add spec crc@3.4.0
-109 silly cache add parsed spec Result {
-109 silly cache add   raw: 'crc@3.4.0',
-109 silly cache add   scope: null,
-109 silly cache add   name: 'crc',
-109 silly cache add   rawSpec: '3.4.0',
-109 silly cache add   spec: '3.4.0',
-109 silly cache add   type: 'version' }
-110 silly addNamed crc@3.4.0
-111 verbose addNamed "3.4.0" is a plain semver version for crc
-112 silly mapToRegistry name crc
-113 silly mapToRegistry using default registry
-114 silly mapToRegistry registry https://registry.npmjs.org/
-115 silly mapToRegistry data Result {
-115 silly mapToRegistry   raw: 'crc',
-115 silly mapToRegistry   scope: null,
-115 silly mapToRegistry   name: 'crc',
-115 silly mapToRegistry   rawSpec: '',
-115 silly mapToRegistry   spec: 'latest',
-115 silly mapToRegistry   type: 'tag' }
-116 silly mapToRegistry uri https://registry.npmjs.org/crc
-117 verbose addNameVersion registry:https://registry.npmjs.org/crc not in flight; fetching
-118 silly cache add args [ 'debug@~2.2.0', null ]
-119 verbose cache add spec debug@~2.2.0
-120 silly cache add parsed spec Result {
-120 silly cache add   raw: 'debug@~2.2.0',
-120 silly cache add   scope: null,
-120 silly cache add   name: 'debug',
-120 silly cache add   rawSpec: '~2.2.0',
-120 silly cache add   spec: '>=2.2.0 <2.3.0',
-120 silly cache add   type: 'range' }
-121 silly addNamed debug@>=2.2.0 <2.3.0
-122 verbose addNamed ">=2.2.0 <2.3.0" is a valid semver range for debug
-123 silly addNameRange { name: 'debug', range: '>=2.2.0 <2.3.0', hasData: false }
-124 silly mapToRegistry name debug
-125 silly mapToRegistry using default registry
-126 silly mapToRegistry registry https://registry.npmjs.org/
-127 silly mapToRegistry data Result {
-127 silly mapToRegistry   raw: 'debug',
-127 silly mapToRegistry   scope: null,
-127 silly mapToRegistry   name: 'debug',
-127 silly mapToRegistry   rawSpec: '',
-127 silly mapToRegistry   spec: 'latest',
-127 silly mapToRegistry   type: 'tag' }
-128 silly mapToRegistry uri https://registry.npmjs.org/debug
-129 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
-130 silly cache add args [ 'depd@~1.1.0', null ]
-131 verbose cache add spec depd@~1.1.0
-132 silly cache add parsed spec Result {
-132 silly cache add   raw: 'depd@~1.1.0',
-132 silly cache add   scope: null,
-132 silly cache add   name: 'depd',
-132 silly cache add   rawSpec: '~1.1.0',
-132 silly cache add   spec: '>=1.1.0 <1.2.0',
-132 silly cache add   type: 'range' }
-133 silly addNamed depd@>=1.1.0 <1.2.0
-134 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for depd
-135 silly addNameRange { name: 'depd', range: '>=1.1.0 <1.2.0', hasData: false }
-136 silly mapToRegistry name depd
-137 silly mapToRegistry using default registry
-138 silly mapToRegistry registry https://registry.npmjs.org/
-139 silly mapToRegistry data Result {
-139 silly mapToRegistry   raw: 'depd',
-139 silly mapToRegistry   scope: null,
-139 silly mapToRegistry   name: 'depd',
-139 silly mapToRegistry   rawSpec: '',
-139 silly mapToRegistry   spec: 'latest',
-139 silly mapToRegistry   type: 'tag' }
-140 silly mapToRegistry uri https://registry.npmjs.org/depd
-141 verbose addNameRange registry:https://registry.npmjs.org/depd not in flight; fetching
-142 silly cache add args [ 'on-headers@~1.0.1', null ]
-143 verbose cache add spec on-headers@~1.0.1
-144 silly cache add parsed spec Result {
-144 silly cache add   raw: 'on-headers@~1.0.1',
-144 silly cache add   scope: null,
-144 silly cache add   name: 'on-headers',
-144 silly cache add   rawSpec: '~1.0.1',
-144 silly cache add   spec: '>=1.0.1 <1.1.0',
-144 silly cache add   type: 'range' }
-145 silly addNamed on-headers@>=1.0.1 <1.1.0
-146 verbose addNamed ">=1.0.1 <1.1.0" is a valid semver range for on-headers
-147 silly addNameRange { name: 'on-headers', range: '>=1.0.1 <1.1.0', hasData: false }
-148 silly mapToRegistry name on-headers
-149 silly mapToRegistry using default registry
-150 silly mapToRegistry registry https://registry.npmjs.org/
-151 silly mapToRegistry data Result {
-151 silly mapToRegistry   raw: 'on-headers',
-151 silly mapToRegistry   scope: null,
-151 silly mapToRegistry   name: 'on-headers',
-151 silly mapToRegistry   rawSpec: '',
-151 silly mapToRegistry   spec: 'latest',
-151 silly mapToRegistry   type: 'tag' }
-152 silly mapToRegistry uri https://registry.npmjs.org/on-headers
-153 verbose addNameRange registry:https://registry.npmjs.org/on-headers not in flight; fetching
-154 silly cache add args [ 'parseurl@~1.3.1', null ]
-155 verbose cache add spec parseurl@~1.3.1
-156 silly cache add parsed spec Result {
-156 silly cache add   raw: 'parseurl@~1.3.1',
-156 silly cache add   scope: null,
-156 silly cache add   name: 'parseurl',
-156 silly cache add   rawSpec: '~1.3.1',
-156 silly cache add   spec: '>=1.3.1 <1.4.0',
-156 silly cache add   type: 'range' }
-157 silly addNamed parseurl@>=1.3.1 <1.4.0
-158 verbose addNamed ">=1.3.1 <1.4.0" is a valid semver range for parseurl
-159 silly addNameRange { name: 'parseurl', range: '>=1.3.1 <1.4.0', hasData: false }
-160 silly mapToRegistry name parseurl
-161 silly mapToRegistry using default registry
-162 silly mapToRegistry registry https://registry.npmjs.org/
-163 silly mapToRegistry data Result {
-163 silly mapToRegistry   raw: 'parseurl',
-163 silly mapToRegistry   scope: null,
-163 silly mapToRegistry   name: 'parseurl',
-163 silly mapToRegistry   rawSpec: '',
-163 silly mapToRegistry   spec: 'latest',
-163 silly mapToRegistry   type: 'tag' }
-164 silly mapToRegistry uri https://registry.npmjs.org/parseurl
-165 verbose addNameRange registry:https://registry.npmjs.org/parseurl not in flight; fetching
-166 silly cache add args [ 'uid-safe@~2.1.2', null ]
-167 verbose cache add spec uid-safe@~2.1.2
-168 silly cache add parsed spec Result {
-168 silly cache add   raw: 'uid-safe@~2.1.2',
-168 silly cache add   scope: null,
-168 silly cache add   name: 'uid-safe',
-168 silly cache add   rawSpec: '~2.1.2',
-168 silly cache add   spec: '>=2.1.2 <2.2.0',
-168 silly cache add   type: 'range' }
-169 silly addNamed uid-safe@>=2.1.2 <2.2.0
-170 verbose addNamed ">=2.1.2 <2.2.0" is a valid semver range for uid-safe
-171 silly addNameRange { name: 'uid-safe', range: '>=2.1.2 <2.2.0', hasData: false }
-172 silly mapToRegistry name uid-safe
-173 silly mapToRegistry using default registry
-174 silly mapToRegistry registry https://registry.npmjs.org/
-175 silly mapToRegistry data Result {
-175 silly mapToRegistry   raw: 'uid-safe',
-175 silly mapToRegistry   scope: null,
-175 silly mapToRegistry   name: 'uid-safe',
-175 silly mapToRegistry   rawSpec: '',
-175 silly mapToRegistry   spec: 'latest',
-175 silly mapToRegistry   type: 'tag' }
-176 silly mapToRegistry uri https://registry.npmjs.org/uid-safe
-177 verbose addNameRange registry:https://registry.npmjs.org/uid-safe not in flight; fetching
-178 silly cache add args [ 'utils-merge@1.0.0', null ]
-179 verbose cache add spec utils-merge@1.0.0
-180 silly cache add parsed spec Result {
-180 silly cache add   raw: 'utils-merge@1.0.0',
-180 silly cache add   scope: null,
-180 silly cache add   name: 'utils-merge',
-180 silly cache add   rawSpec: '1.0.0',
-180 silly cache add   spec: '1.0.0',
-180 silly cache add   type: 'version' }
-181 silly addNamed utils-merge@1.0.0
-182 verbose addNamed "1.0.0" is a plain semver version for utils-merge
-183 silly mapToRegistry name utils-merge
-184 silly mapToRegistry using default registry
-185 silly mapToRegistry registry https://registry.npmjs.org/
-186 silly mapToRegistry data Result {
-186 silly mapToRegistry   raw: 'utils-merge',
-186 silly mapToRegistry   scope: null,
-186 silly mapToRegistry   name: 'utils-merge',
-186 silly mapToRegistry   rawSpec: '',
-186 silly mapToRegistry   spec: 'latest',
-186 silly mapToRegistry   type: 'tag' }
-187 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
-188 verbose addNameVersion registry:https://registry.npmjs.org/utils-merge not in flight; fetching
-189 silly cache add args [ 'cookie@0.3.1', null ]
-190 verbose cache add spec cookie@0.3.1
-191 silly cache add parsed spec Result {
-191 silly cache add   raw: 'cookie@0.3.1',
-191 silly cache add   scope: null,
-191 silly cache add   name: 'cookie',
-191 silly cache add   rawSpec: '0.3.1',
-191 silly cache add   spec: '0.3.1',
-191 silly cache add   type: 'version' }
-192 silly addNamed cookie@0.3.1
-193 verbose addNamed "0.3.1" is a plain semver version for cookie
-194 silly mapToRegistry name cookie
-195 silly mapToRegistry using default registry
-196 silly mapToRegistry registry https://registry.npmjs.org/
-197 silly mapToRegistry data Result {
-197 silly mapToRegistry   raw: 'cookie',
-197 silly mapToRegistry   scope: null,
-197 silly mapToRegistry   name: 'cookie',
-197 silly mapToRegistry   rawSpec: '',
-197 silly mapToRegistry   spec: 'latest',
-197 silly mapToRegistry   type: 'tag' }
-198 silly mapToRegistry uri https://registry.npmjs.org/cookie
-199 verbose addNameVersion registry:https://registry.npmjs.org/cookie not in flight; fetching
-200 silly cache add args [ 'cookie-signature@1.0.6', null ]
-201 verbose cache add spec cookie-signature@1.0.6
-202 silly cache add parsed spec Result {
-202 silly cache add   raw: 'cookie-signature@1.0.6',
-202 silly cache add   scope: null,
-202 silly cache add   name: 'cookie-signature',
-202 silly cache add   rawSpec: '1.0.6',
-202 silly cache add   spec: '1.0.6',
-202 silly cache add   type: 'version' }
-203 silly addNamed cookie-signature@1.0.6
-204 verbose addNamed "1.0.6" is a plain semver version for cookie-signature
-205 silly mapToRegistry name cookie-signature
-206 silly mapToRegistry using default registry
-207 silly mapToRegistry registry https://registry.npmjs.org/
-208 silly mapToRegistry data Result {
-208 silly mapToRegistry   raw: 'cookie-signature',
-208 silly mapToRegistry   scope: null,
-208 silly mapToRegistry   name: 'cookie-signature',
-208 silly mapToRegistry   rawSpec: '',
-208 silly mapToRegistry   spec: 'latest',
-208 silly mapToRegistry   type: 'tag' }
-209 silly mapToRegistry uri https://registry.npmjs.org/cookie-signature
-210 verbose addNameVersion registry:https://registry.npmjs.org/cookie-signature not in flight; fetching
-211 verbose request uri https://registry.npmjs.org/crc
-212 verbose request no auth needed
-213 info attempt registry request try #1 at 15:52:03
-214 http request GET https://registry.npmjs.org/crc
-215 verbose request uri https://registry.npmjs.org/on-headers
-216 verbose request no auth needed
-217 info attempt registry request try #1 at 15:52:03
-218 http request GET https://registry.npmjs.org/on-headers
-219 verbose request uri https://registry.npmjs.org/uid-safe
-220 verbose request no auth needed
-221 info attempt registry request try #1 at 15:52:03
-222 http request GET https://registry.npmjs.org/uid-safe
-223 verbose request uri https://registry.npmjs.org/depd
-224 verbose request no auth needed
-225 info attempt registry request try #1 at 15:52:03
-226 verbose etag "2IUBEEQSLE6DHP0TKJC7QMY81"
-227 http request GET https://registry.npmjs.org/depd
-228 verbose request uri https://registry.npmjs.org/utils-merge
-229 verbose request no auth needed
-230 info attempt registry request try #1 at 15:52:03
-231 verbose etag "6BCLPY6XYYCFFRSK3NGSF94WR"
-232 http request GET https://registry.npmjs.org/utils-merge
-233 verbose request uri https://registry.npmjs.org/cookie
-234 verbose request no auth needed
-235 info attempt registry request try #1 at 15:52:03
-236 verbose etag "9O880MGZWFYS0VSFBB01QXFJZ"
-237 http request GET https://registry.npmjs.org/cookie
-238 verbose request uri https://registry.npmjs.org/cookie-signature
-239 verbose request no auth needed
-240 info attempt registry request try #1 at 15:52:03
-241 verbose etag "ET4AGD5PK81O068I8EGRAY4I7"
-242 http request GET https://registry.npmjs.org/cookie-signature
-243 verbose request uri https://registry.npmjs.org/parseurl
-244 verbose request no auth needed
-245 info attempt registry request try #1 at 15:52:03
-246 verbose etag "1FPSE3BHXBRPYD13E1IHN55WA"
-247 http request GET https://registry.npmjs.org/parseurl
-248 verbose request uri https://registry.npmjs.org/debug
-249 verbose request no auth needed
-250 info attempt registry request try #1 at 15:52:03
-251 verbose etag "CAE1DZB7YZRPSD9SUTVLOPMMN"
-252 http request GET https://registry.npmjs.org/debug
-253 http 200 https://registry.npmjs.org/on-headers
-254 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-254 verbose headers   etag: '"65T77SUWBZV84UYPIC9KHNLZC"',
-254 verbose headers   'content-type': 'application/json',
-254 verbose headers   'content-encoding': 'gzip',
-254 verbose headers   'cache-control': 'max-age=300',
-254 verbose headers   'content-length': '2072',
-254 verbose headers   'accept-ranges': 'bytes',
-254 verbose headers   date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-254 verbose headers   via: '1.1 varnish',
-254 verbose headers   age: '276',
-254 verbose headers   connection: 'keep-alive',
-254 verbose headers   'x-served-by': 'cache-jfk8133-JFK',
-254 verbose headers   'x-cache': 'HIT',
-254 verbose headers   'x-cache-hits': '12',
-254 verbose headers   'x-timer': 'S1475092324.162198,VS0,VE0',
-254 verbose headers   vary: 'Accept-Encoding' }
-255 silly get cb [ 200,
-255 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-255 silly get     etag: '"65T77SUWBZV84UYPIC9KHNLZC"',
-255 silly get     'content-type': 'application/json',
-255 silly get     'content-encoding': 'gzip',
-255 silly get     'cache-control': 'max-age=300',
-255 silly get     'content-length': '2072',
-255 silly get     'accept-ranges': 'bytes',
-255 silly get     date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-255 silly get     via: '1.1 varnish',
-255 silly get     age: '276',
-255 silly get     connection: 'keep-alive',
-255 silly get     'x-served-by': 'cache-jfk8133-JFK',
-255 silly get     'x-cache': 'HIT',
-255 silly get     'x-cache-hits': '12',
-255 silly get     'x-timer': 'S1475092324.162198,VS0,VE0',
-255 silly get     vary: 'Accept-Encoding' } ]
-256 verbose get saving on-headers to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\on-headers\.cache.json
-257 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-258 http 200 https://registry.npmjs.org/utils-merge
-259 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-259 verbose headers   etag: '"BWPGAGFAYXHJVT72ITM0BHZK0"',
-259 verbose headers   'content-type': 'application/json',
-259 verbose headers   'content-encoding': 'gzip',
-259 verbose headers   'cache-control': 'max-age=300',
-259 verbose headers   'content-length': '1051',
-259 verbose headers   'accept-ranges': 'bytes',
-259 verbose headers   date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-259 verbose headers   via: '1.1 varnish',
-259 verbose headers   age: '198',
-259 verbose headers   connection: 'keep-alive',
-259 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
-259 verbose headers   'x-cache': 'HIT',
-259 verbose headers   'x-cache-hits': '13',
-259 verbose headers   'x-timer': 'S1475092324.169276,VS0,VE0',
-259 verbose headers   vary: 'Accept-Encoding' }
-260 silly get cb [ 200,
-260 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-260 silly get     etag: '"BWPGAGFAYXHJVT72ITM0BHZK0"',
-260 silly get     'content-type': 'application/json',
-260 silly get     'content-encoding': 'gzip',
-260 silly get     'cache-control': 'max-age=300',
-260 silly get     'content-length': '1051',
-260 silly get     'accept-ranges': 'bytes',
-260 silly get     date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-260 silly get     via: '1.1 varnish',
-260 silly get     age: '198',
-260 silly get     connection: 'keep-alive',
-260 silly get     'x-served-by': 'cache-jfk8132-JFK',
-260 silly get     'x-cache': 'HIT',
-260 silly get     'x-cache-hits': '13',
-260 silly get     'x-timer': 'S1475092324.169276,VS0,VE0',
-260 silly get     vary: 'Accept-Encoding' } ]
-261 verbose get saving utils-merge to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\utils-merge\.cache.json
-262 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-263 http 304 https://registry.npmjs.org/depd
-264 verbose headers { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-264 verbose headers   via: '1.1 varnish',
-264 verbose headers   'cache-control': 'max-age=300',
-264 verbose headers   etag: '"2IUBEEQSLE6DHP0TKJC7QMY81"',
-264 verbose headers   age: '20',
-264 verbose headers   connection: 'keep-alive',
-264 verbose headers   'x-served-by': 'cache-jfk8143-JFK',
-264 verbose headers   'x-cache': 'HIT',
-264 verbose headers   'x-cache-hits': '4',
-264 verbose headers   'x-timer': 'S1475092324.186277,VS0,VE0',
-264 verbose headers   vary: 'Accept-Encoding' }
-265 silly get cb [ 304,
-265 silly get   { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-265 silly get     via: '1.1 varnish',
-265 silly get     'cache-control': 'max-age=300',
-265 silly get     etag: '"2IUBEEQSLE6DHP0TKJC7QMY81"',
-265 silly get     age: '20',
-265 silly get     connection: 'keep-alive',
-265 silly get     'x-served-by': 'cache-jfk8143-JFK',
-265 silly get     'x-cache': 'HIT',
-265 silly get     'x-cache-hits': '4',
-265 silly get     'x-timer': 'S1475092324.186277,VS0,VE0',
-265 silly get     vary: 'Accept-Encoding' } ]
-266 verbose etag https://registry.npmjs.org/depd from cache
-267 verbose get saving depd to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\depd\.cache.json
-268 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-269 silly addNameRange number 2 { name: 'on-headers', range: '>=1.0.1 <1.1.0', hasData: true }
-270 silly addNameRange versions [ 'on-headers', [ '0.0.0', '1.0.0', '1.0.1' ] ]
-271 silly addNamed on-headers@1.0.1
-272 verbose addNamed "1.0.1" is a plain semver version for on-headers
-273 silly mapToRegistry name utils-merge
-274 silly mapToRegistry using default registry
-275 silly mapToRegistry registry https://registry.npmjs.org/
-276 silly mapToRegistry data Result {
-276 silly mapToRegistry   raw: 'utils-merge',
-276 silly mapToRegistry   scope: null,
-276 silly mapToRegistry   name: 'utils-merge',
-276 silly mapToRegistry   rawSpec: '',
-276 silly mapToRegistry   spec: 'latest',
-276 silly mapToRegistry   type: 'tag' }
-277 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
-278 verbose addRemoteTarball https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz not in flight; adding
-279 verbose addRemoteTarball [ 'https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz',
-279 verbose addRemoteTarball   '0294fb922bb9375153541c4f7096231f287c8af8' ]
-280 silly mapToRegistry name on-headers
-281 silly mapToRegistry using default registry
-282 silly mapToRegistry registry https://registry.npmjs.org/
-283 silly mapToRegistry data Result {
-283 silly mapToRegistry   raw: 'on-headers',
-283 silly mapToRegistry   scope: null,
-283 silly mapToRegistry   name: 'on-headers',
-283 silly mapToRegistry   rawSpec: '',
-283 silly mapToRegistry   spec: 'latest',
-283 silly mapToRegistry   type: 'tag' }
-284 silly mapToRegistry uri https://registry.npmjs.org/on-headers
-285 verbose addRemoteTarball https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz not in flight; adding
-286 verbose addRemoteTarball [ 'https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz',
-286 verbose addRemoteTarball   '928f5d0f470d49342651ea6794b0857c100693f7' ]
-287 silly addNameRange number 2 { name: 'depd', range: '>=1.1.0 <1.2.0', hasData: true }
-288 silly addNameRange versions [ 'depd',
-288 silly addNameRange   [ '0.0.0',
-288 silly addNameRange     '0.0.1',
-288 silly addNameRange     '0.1.0',
-288 silly addNameRange     '0.2.0',
-288 silly addNameRange     '0.3.0',
-288 silly addNameRange     '0.4.0',
-288 silly addNameRange     '0.4.1',
-288 silly addNameRange     '0.4.2',
-288 silly addNameRange     '0.4.3',
-288 silly addNameRange     '0.4.4',
-288 silly addNameRange     '0.4.5',
-288 silly addNameRange     '1.0.0',
-288 silly addNameRange     '1.0.1',
-288 silly addNameRange     '1.1.0' ] ]
-289 silly addNamed depd@1.1.0
-290 verbose addNamed "1.1.0" is a plain semver version for depd
-291 info retry fetch attempt 1 at 15:52:04
-292 info attempt registry request try #1 at 15:52:04
-293 http fetch GET https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz
-294 info retry fetch attempt 1 at 15:52:04
-295 info attempt registry request try #1 at 15:52:04
-296 http fetch GET https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz
-297 silly cache afterAdd depd@1.1.0
-298 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\depd\1.1.0\package\package.json not in flight; writing
-299 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-300 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\depd\1.1.0\package\package.json written
-301 http fetch 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz
-302 http fetch 200 https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz
-303 silly fetchAndShaCheck shasum 928f5d0f470d49342651ea6794b0857c100693f7
-304 silly fetchAndShaCheck shasum 0294fb922bb9375153541c4f7096231f287c8af8
-305 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\on-headers\-\on-headers-1.0.1.tgz not in flight; adding
-306 verbose addTmpTarball already have metadata; skipping unpack for on-headers@1.0.1
-307 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-308 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\utils-merge\-\utils-merge-1.0.0.tgz not in flight; adding
-309 verbose addTmpTarball already have metadata; skipping unpack for utils-merge@1.0.0
-310 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-311 silly cache afterAdd utils-merge@1.0.0
-312 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\utils-merge\1.0.0\package\package.json not in flight; writing
-313 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-314 silly cache afterAdd on-headers@1.0.1
-315 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\on-headers\1.0.1\package\package.json not in flight; writing
-316 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-317 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\utils-merge\1.0.0\package\package.json written
-318 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\on-headers\1.0.1\package\package.json written
-319 http 304 https://registry.npmjs.org/cookie-signature
-320 verbose headers { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-320 verbose headers   via: '1.1 varnish',
-320 verbose headers   'cache-control': 'max-age=300',
-320 verbose headers   etag: '"ET4AGD5PK81O068I8EGRAY4I7"',
-320 verbose headers   age: '190',
-320 verbose headers   connection: 'keep-alive',
-320 verbose headers   'x-served-by': 'cache-jfk8120-JFK',
-320 verbose headers   'x-cache': 'HIT',
-320 verbose headers   'x-cache-hits': '9',
-320 verbose headers   'x-timer': 'S1475092324.530919,VS0,VE0',
-320 verbose headers   vary: 'Accept-Encoding' }
-321 silly get cb [ 304,
-321 silly get   { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-321 silly get     via: '1.1 varnish',
-321 silly get     'cache-control': 'max-age=300',
-321 silly get     etag: '"ET4AGD5PK81O068I8EGRAY4I7"',
-321 silly get     age: '190',
-321 silly get     connection: 'keep-alive',
-321 silly get     'x-served-by': 'cache-jfk8120-JFK',
-321 silly get     'x-cache': 'HIT',
-321 silly get     'x-cache-hits': '9',
-321 silly get     'x-timer': 'S1475092324.530919,VS0,VE0',
-321 silly get     vary: 'Accept-Encoding' } ]
-322 verbose etag https://registry.npmjs.org/cookie-signature from cache
-323 verbose get saving cookie-signature to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\cookie-signature\.cache.json
-324 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-325 http 304 https://registry.npmjs.org/cookie
-326 verbose headers { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-326 verbose headers   via: '1.1 varnish',
-326 verbose headers   'cache-control': 'max-age=300',
-326 verbose headers   etag: '"9O880MGZWFYS0VSFBB01QXFJZ"',
-326 verbose headers   age: '199',
-326 verbose headers   connection: 'keep-alive',
-326 verbose headers   'x-served-by': 'cache-jfk8125-JFK',
-326 verbose headers   'x-cache': 'HIT',
-326 verbose headers   'x-cache-hits': '12',
-326 verbose headers   'x-timer': 'S1475092324.526796,VS0,VE0',
-326 verbose headers   vary: 'Accept-Encoding' }
-327 silly get cb [ 304,
-327 silly get   { date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-327 silly get     via: '1.1 varnish',
-327 silly get     'cache-control': 'max-age=300',
-327 silly get     etag: '"9O880MGZWFYS0VSFBB01QXFJZ"',
-327 silly get     age: '199',
-327 silly get     connection: 'keep-alive',
-327 silly get     'x-served-by': 'cache-jfk8125-JFK',
-327 silly get     'x-cache': 'HIT',
-327 silly get     'x-cache-hits': '12',
-327 silly get     'x-timer': 'S1475092324.526796,VS0,VE0',
-327 silly get     vary: 'Accept-Encoding' } ]
-328 verbose etag https://registry.npmjs.org/cookie from cache
-329 verbose get saving cookie to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\cookie\.cache.json
-330 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-331 silly cache afterAdd cookie-signature@1.0.6
-332 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\cookie-signature\1.0.6\package\package.json not in flight; writing
-333 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-334 silly cache afterAdd cookie@0.3.1
-335 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\cookie\0.3.1\package\package.json not in flight; writing
-336 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-337 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\cookie-signature\1.0.6\package\package.json written
-338 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\cookie\0.3.1\package\package.json written
-339 http 200 https://registry.npmjs.org/uid-safe
-340 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-340 verbose headers   etag: '"APFWFO8QXH76NGAAGNLFSSB6Z"',
-340 verbose headers   'content-type': 'application/json',
-340 verbose headers   'content-encoding': 'gzip',
-340 verbose headers   'cache-control': 'max-age=300',
-340 verbose headers   'content-length': '3556',
-340 verbose headers   'accept-ranges': 'bytes',
-340 verbose headers   date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-340 verbose headers   via: '1.1 varnish',
-340 verbose headers   age: '142',
-340 verbose headers   connection: 'keep-alive',
-340 verbose headers   'x-served-by': 'cache-jfk8131-JFK',
-340 verbose headers   'x-cache': 'HIT',
-340 verbose headers   'x-cache-hits': '4',
-340 verbose headers   'x-timer': 'S1475092324.165060,VS0,VE0',
-340 verbose headers   vary: 'Accept-Encoding' }
-341 silly get cb [ 200,
-341 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-341 silly get     etag: '"APFWFO8QXH76NGAAGNLFSSB6Z"',
-341 silly get     'content-type': 'application/json',
-341 silly get     'content-encoding': 'gzip',
-341 silly get     'cache-control': 'max-age=300',
-341 silly get     'content-length': '3556',
-341 silly get     'accept-ranges': 'bytes',
-341 silly get     date: 'Wed, 28 Sep 2016 19:52:04 GMT',
-341 silly get     via: '1.1 varnish',
-341 silly get     age: '142',
-341 silly get     connection: 'keep-alive',
-341 silly get     'x-served-by': 'cache-jfk8131-JFK',
-341 silly get     'x-cache': 'HIT',
-341 silly get     'x-cache-hits': '4',
-341 silly get     'x-timer': 'S1475092324.165060,VS0,VE0',
-341 silly get     vary: 'Accept-Encoding' } ]
-342 verbose get saving uid-safe to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\uid-safe\.cache.json
-343 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-344 silly addNameRange number 2 { name: 'uid-safe', range: '>=2.1.2 <2.2.0', hasData: true }
-345 silly addNameRange versions [ 'uid-safe',
-345 silly addNameRange   [ '1.0.0',
-345 silly addNameRange     '1.0.1',
-345 silly addNameRange     '1.0.2',
-345 silly addNameRange     '1.0.3',
-345 silly addNameRange     '1.1.0',
-345 silly addNameRange     '2.0.0',
-345 silly addNameRange     '2.1.0',
-345 silly addNameRange     '2.1.1',
-345 silly addNameRange     '2.1.2' ] ]
-346 silly addNamed uid-safe@2.1.2
-347 verbose addNamed "2.1.2" is a plain semver version for uid-safe
-348 silly mapToRegistry name uid-safe
-349 silly mapToRegistry using default registry
-350 silly mapToRegistry registry https://registry.npmjs.org/
-351 silly mapToRegistry data Result {
-351 silly mapToRegistry   raw: 'uid-safe',
-351 silly mapToRegistry   scope: null,
-351 silly mapToRegistry   name: 'uid-safe',
-351 silly mapToRegistry   rawSpec: '',
-351 silly mapToRegistry   spec: 'latest',
-351 silly mapToRegistry   type: 'tag' }
-352 silly mapToRegistry uri https://registry.npmjs.org/uid-safe
-353 verbose addRemoteTarball https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz not in flight; adding
-354 verbose addRemoteTarball [ 'https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz',
-354 verbose addRemoteTarball   'c934b3caead0fdcd0fb2cff3a8876d06fe0ee0fd' ]
-355 info retry fetch attempt 1 at 15:52:04
-356 info attempt registry request try #1 at 15:52:04
-357 http fetch GET https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz
-358 http 200 https://registry.npmjs.org/crc
-359 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-359 verbose headers   etag: '"YVE5K634K1XMOSJ39IQSHO5U"',
-359 verbose headers   'content-type': 'application/json',
-359 verbose headers   'content-encoding': 'gzip',
-359 verbose headers   'cache-control': 'max-age=300',
-359 verbose headers   'content-length': '4591',
-359 verbose headers   'accept-ranges': 'bytes',
-359 verbose headers   date: 'Wed, 28 Sep 2016 19:52:03 GMT',
-359 verbose headers   via: '1.1 varnish',
-359 verbose headers   age: '227',
-359 verbose headers   connection: 'keep-alive',
-359 verbose headers   'x-served-by': 'cache-jfk8141-JFK',
-359 verbose headers   'x-cache': 'HIT',
-359 verbose headers   'x-cache-hits': '6',
-359 verbose headers   'x-timer': 'S1475092323.930336,VS0,VE0',
-359 verbose headers   vary: 'Accept-Encoding' }
-360 silly get cb [ 200,
-360 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-360 silly get     etag: '"YVE5K634K1XMOSJ39IQSHO5U"',
-360 silly get     'content-type': 'application/json',
-360 silly get     'content-encoding': 'gzip',
-360 silly get     'cache-control': 'max-age=300',
-360 silly get     'content-length': '4591',
-360 silly get     'accept-ranges': 'bytes',
-360 silly get     date: 'Wed, 28 Sep 2016 19:52:03 GMT',
-360 silly get     via: '1.1 varnish',
-360 silly get     age: '227',
-360 silly get     connection: 'keep-alive',
-360 silly get     'x-served-by': 'cache-jfk8141-JFK',
-360 silly get     'x-cache': 'HIT',
-360 silly get     'x-cache-hits': '6',
-360 silly get     'x-timer': 'S1475092323.930336,VS0,VE0',
-360 silly get     vary: 'Accept-Encoding' } ]
-361 verbose get saving crc to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\crc\.cache.json
-362 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-363 silly mapToRegistry name crc
-364 silly mapToRegistry using default registry
-365 silly mapToRegistry registry https://registry.npmjs.org/
-366 silly mapToRegistry data Result {
-366 silly mapToRegistry   raw: 'crc',
-366 silly mapToRegistry   scope: null,
-366 silly mapToRegistry   name: 'crc',
-366 silly mapToRegistry   rawSpec: '',
-366 silly mapToRegistry   spec: 'latest',
-366 silly mapToRegistry   type: 'tag' }
-367 silly mapToRegistry uri https://registry.npmjs.org/crc
-368 verbose addRemoteTarball https://registry.npmjs.org/crc/-/crc-3.4.0.tgz not in flight; adding
-369 verbose addRemoteTarball [ 'https://registry.npmjs.org/crc/-/crc-3.4.0.tgz',
-369 verbose addRemoteTarball   '4258e351613a74ef1153dfcb05e820c3e9715d7f' ]
-370 info retry fetch attempt 1 at 15:52:05
-371 info attempt registry request try #1 at 15:52:05
-372 http fetch GET https://registry.npmjs.org/crc/-/crc-3.4.0.tgz
-373 http fetch 200 https://registry.npmjs.org/crc/-/crc-3.4.0.tgz
-374 silly fetchAndShaCheck shasum 4258e351613a74ef1153dfcb05e820c3e9715d7f
-375 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\crc\-\crc-3.4.0.tgz not in flight; adding
-376 verbose addTmpTarball already have metadata; skipping unpack for crc@3.4.0
-377 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-378 silly cache afterAdd crc@3.4.0
-379 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\crc\3.4.0\package\package.json not in flight; writing
-380 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-381 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\crc\3.4.0\package\package.json written
-382 http fetch 200 https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz
-383 silly fetchAndShaCheck shasum c934b3caead0fdcd0fb2cff3a8876d06fe0ee0fd
-384 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\uid-safe\-\uid-safe-2.1.2.tgz not in flight; adding
-385 verbose addTmpTarball already have metadata; skipping unpack for uid-safe@2.1.2
-386 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-387 silly cache afterAdd uid-safe@2.1.2
-388 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\uid-safe\2.1.2\package\package.json not in flight; writing
-389 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-390 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\uid-safe\2.1.2\package\package.json written
-391 http 200 https://registry.npmjs.org/parseurl
-392 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-392 verbose headers   etag: '"44JB0QP7Z09UBDYL3IXSN24VX"',
-392 verbose headers   'content-type': 'application/json',
-392 verbose headers   'content-encoding': 'gzip',
-392 verbose headers   'cache-control': 'max-age=300',
-392 verbose headers   'content-length': '3130',
-392 verbose headers   'accept-ranges': 'bytes',
-392 verbose headers   date: 'Wed, 28 Sep 2016 19:52:05 GMT',
-392 verbose headers   via: '1.1 varnish',
-392 verbose headers   age: '70',
-392 verbose headers   connection: 'keep-alive',
-392 verbose headers   'x-served-by': 'cache-jfk8134-JFK',
-392 verbose headers   'x-cache': 'HIT',
-392 verbose headers   'x-cache-hits': '9',
-392 verbose headers   'x-timer': 'S1475092325.150401,VS0,VE0',
-392 verbose headers   vary: 'Accept-Encoding' }
-393 silly get cb [ 200,
-393 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-393 silly get     etag: '"44JB0QP7Z09UBDYL3IXSN24VX"',
-393 silly get     'content-type': 'application/json',
-393 silly get     'content-encoding': 'gzip',
-393 silly get     'cache-control': 'max-age=300',
-393 silly get     'content-length': '3130',
-393 silly get     'accept-ranges': 'bytes',
-393 silly get     date: 'Wed, 28 Sep 2016 19:52:05 GMT',
-393 silly get     via: '1.1 varnish',
-393 silly get     age: '70',
-393 silly get     connection: 'keep-alive',
-393 silly get     'x-served-by': 'cache-jfk8134-JFK',
-393 silly get     'x-cache': 'HIT',
-393 silly get     'x-cache-hits': '9',
-393 silly get     'x-timer': 'S1475092325.150401,VS0,VE0',
-393 silly get     vary: 'Accept-Encoding' } ]
-394 verbose get saving parseurl to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\parseurl\.cache.json
-395 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-396 silly addNameRange number 2 { name: 'parseurl', range: '>=1.3.1 <1.4.0', hasData: true }
-397 silly addNameRange versions [ 'parseurl',
-397 silly addNameRange   [ '1.0.0',
-397 silly addNameRange     '1.0.1',
-397 silly addNameRange     '1.1.0',
-397 silly addNameRange     '1.1.1',
-397 silly addNameRange     '1.1.2',
-397 silly addNameRange     '1.1.3',
-397 silly addNameRange     '1.2.0',
-397 silly addNameRange     '1.3.0',
-397 silly addNameRange     '1.3.1' ] ]
-398 silly addNamed parseurl@1.3.1
-399 verbose addNamed "1.3.1" is a plain semver version for parseurl
-400 silly cache afterAdd parseurl@1.3.1
-401 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\parseurl\1.3.1\package\package.json not in flight; writing
-402 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-403 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\parseurl\1.3.1\package\package.json written
-404 http 200 https://registry.npmjs.org/debug
-405 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-405 verbose headers   etag: '"EPCNO0BWMRYPD32449Y2MGJED"',
-405 verbose headers   'content-type': 'application/json',
-405 verbose headers   'content-encoding': 'gzip',
-405 verbose headers   'cache-control': 'max-age=300',
-405 verbose headers   'content-length': '9511',
-405 verbose headers   'accept-ranges': 'bytes',
-405 verbose headers   date: 'Wed, 28 Sep 2016 19:52:05 GMT',
-405 verbose headers   via: '1.1 varnish',
-405 verbose headers   age: '210',
-405 verbose headers   connection: 'keep-alive',
-405 verbose headers   'x-served-by': 'cache-jfk8130-JFK',
-405 verbose headers   'x-cache': 'HIT',
-405 verbose headers   'x-cache-hits': '59',
-405 verbose headers   'x-timer': 'S1475092325.151946,VS0,VE0',
-405 verbose headers   vary: 'Accept-Encoding' }
-406 silly get cb [ 200,
-406 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-406 silly get     etag: '"EPCNO0BWMRYPD32449Y2MGJED"',
-406 silly get     'content-type': 'application/json',
-406 silly get     'content-encoding': 'gzip',
-406 silly get     'cache-control': 'max-age=300',
-406 silly get     'content-length': '9511',
-406 silly get     'accept-ranges': 'bytes',
-406 silly get     date: 'Wed, 28 Sep 2016 19:52:05 GMT',
-406 silly get     via: '1.1 varnish',
-406 silly get     age: '210',
-406 silly get     connection: 'keep-alive',
-406 silly get     'x-served-by': 'cache-jfk8130-JFK',
-406 silly get     'x-cache': 'HIT',
-406 silly get     'x-cache-hits': '59',
-406 silly get     'x-timer': 'S1475092325.151946,VS0,VE0',
-406 silly get     vary: 'Accept-Encoding' } ]
-407 verbose get saving debug to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\debug\.cache.json
-408 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-409 silly addNameRange number 2 { name: 'debug', range: '>=2.2.0 <2.3.0', hasData: true }
-410 silly addNameRange versions [ 'debug',
-410 silly addNameRange   [ '0.0.1',
-410 silly addNameRange     '0.1.0',
-410 silly addNameRange     '0.2.0',
-410 silly addNameRange     '0.3.0',
-410 silly addNameRange     '0.4.0',
-410 silly addNameRange     '0.4.1',
-410 silly addNameRange     '0.5.0',
-410 silly addNameRange     '0.6.0',
-410 silly addNameRange     '0.7.0',
-410 silly addNameRange     '0.7.1',
-410 silly addNameRange     '0.7.2',
-410 silly addNameRange     '0.7.3',
-410 silly addNameRange     '0.7.4',
-410 silly addNameRange     '0.8.0',
-410 silly addNameRange     '0.8.1',
-410 silly addNameRange     '1.0.0',
-410 silly addNameRange     '1.0.1',
-410 silly addNameRange     '1.0.2',
-410 silly addNameRange     '1.0.3',
-410 silly addNameRange     '1.0.4',
-410 silly addNameRange     '2.0.0',
-410 silly addNameRange     '2.1.0',
-410 silly addNameRange     '2.1.1',
-410 silly addNameRange     '2.1.2',
-410 silly addNameRange     '2.1.3',
-410 silly addNameRange     '2.2.0' ] ]
-411 silly addNamed debug@2.2.0
-412 verbose addNamed "2.2.0" is a plain semver version for debug
-413 silly cache afterAdd debug@2.2.0
-414 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\debug\2.2.0\package\package.json not in flight; writing
-415 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-416 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\debug\2.2.0\package\package.json written
-417 silly install resolved [ { name: 'depd',
-417 silly install resolved     description: 'Deprecate all the things',
-417 silly install resolved     version: '1.1.0',
-417 silly install resolved     author:
-417 silly install resolved      { name: 'Douglas Christopher Wilson',
-417 silly install resolved        email: 'doug@somethingdoug.com' },
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     keywords: [ 'deprecate', 'deprecated' ],
-417 silly install resolved     repository:
-417 silly install resolved      { type: 'git',
-417 silly install resolved        url: 'git+https://github.com/dougwilson/nodejs-depd.git' },
-417 silly install resolved     browser: 'lib/browser/index.js',
-417 silly install resolved     devDependencies:
-417 silly install resolved      { benchmark: '1.0.0',
-417 silly install resolved        'beautify-benchmark': '0.2.4',
-417 silly install resolved        istanbul: '0.3.5',
-417 silly install resolved        mocha: '~1.21.5' },
-417 silly install resolved     files: [ 'lib/', 'History.md', 'LICENSE', 'index.js', 'Readme.md' ],
-417 silly install resolved     engines: { node: '>= 0.6' },
-417 silly install resolved     scripts:
-417 silly install resolved      { bench: 'node benchmark/index.js',
-417 silly install resolved        test: 'mocha --reporter spec --bail test/',
-417 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --no-exit test/',
-417 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/' },
-417 silly install resolved     gitHead: '78c659de20283e3a6bee92bda455e6daff01686a',
-417 silly install resolved     bugs: { url: 'https://github.com/dougwilson/nodejs-depd/issues' },
-417 silly install resolved     homepage: 'https://github.com/dougwilson/nodejs-depd',
-417 silly install resolved     _id: 'depd@1.1.0',
-417 silly install resolved     _shasum: 'e1bd82c6aab6ced965b97b88b17ed3e528ca18c3',
-417 silly install resolved     _from: 'depd@>=1.1.0 <1.2.0',
-417 silly install resolved     _npmVersion: '1.4.28',
-417 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-417 silly install resolved     maintainers: [ [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'e1bd82c6aab6ced965b97b88b17ed3e528ca18c3',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/depd/-/depd-1.1.0.tgz' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/depd/-/depd-1.1.0.tgz',
-417 silly install resolved     readme: 'ERROR: No README data found!' },
-417 silly install resolved   { name: 'utils-merge',
-417 silly install resolved     version: '1.0.0',
-417 silly install resolved     description: 'merge() utility function',
-417 silly install resolved     keywords: [ 'util' ],
-417 silly install resolved     repository:
-417 silly install resolved      { type: 'git',
-417 silly install resolved        url: 'git://github.com/jaredhanson/utils-merge.git' },
-417 silly install resolved     bugs: { url: 'http://github.com/jaredhanson/utils-merge/issues' },
-417 silly install resolved     author:
-417 silly install resolved      { name: 'Jared Hanson',
-417 silly install resolved        email: 'jaredhanson@gmail.com',
-417 silly install resolved        url: 'http://www.jaredhanson.net/' },
-417 silly install resolved     licenses: [ [Object] ],
-417 silly install resolved     main: './index',
-417 silly install resolved     dependencies: {},
-417 silly install resolved     devDependencies: { mocha: '1.x.x', chai: '1.x.x' },
-417 silly install resolved     scripts: { test: 'node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js' },
-417 silly install resolved     engines: { node: '>= 0.4.0' },
-417 silly install resolved     _id: 'utils-merge@1.0.0',
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: '0294fb922bb9375153541c4f7096231f287c8af8',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz' },
-417 silly install resolved     _from: 'utils-merge@1.0.0',
-417 silly install resolved     _npmVersion: '1.2.25',
-417 silly install resolved     _npmUser: { name: 'jaredhanson', email: 'jaredhanson@gmail.com' },
-417 silly install resolved     maintainers: [ [Object] ],
-417 silly install resolved     directories: {},
-417 silly install resolved     _shasum: '0294fb922bb9375153541c4f7096231f287c8af8',
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz' },
-417 silly install resolved   { name: 'on-headers',
-417 silly install resolved     description: 'Execute a listener when a response is about to write headers',
-417 silly install resolved     version: '1.0.1',
-417 silly install resolved     author:
-417 silly install resolved      { name: 'Douglas Christopher Wilson',
-417 silly install resolved        email: 'doug@somethingdoug.com' },
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     keywords: [ 'event', 'headers', 'http', 'onheaders' ],
-417 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/on-headers' },
-417 silly install resolved     dependencies: {},
-417 silly install resolved     devDependencies: { istanbul: '0.3.21', mocha: '2.3.3', supertest: '1.1.0' },
-417 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
-417 silly install resolved     engines: { node: '>= 0.8' },
-417 silly install resolved     scripts:
-417 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
-417 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
-417 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
-417 silly install resolved     gitHead: 'ab0156a979d72353cfe666cccb3639e016b00280',
-417 silly install resolved     bugs: { url: 'https://github.com/jshttp/on-headers/issues' },
-417 silly install resolved     homepage: 'https://github.com/jshttp/on-headers',
-417 silly install resolved     _id: 'on-headers@1.0.1',
-417 silly install resolved     _shasum: '928f5d0f470d49342651ea6794b0857c100693f7',
-417 silly install resolved     _from: 'on-headers@>=1.0.1 <1.1.0',
-417 silly install resolved     _npmVersion: '1.4.28',
-417 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-417 silly install resolved     maintainers: [ [Object], [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: '928f5d0f470d49342651ea6794b0857c100693f7',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz' },
-417 silly install resolved   { name: 'cookie-signature',
-417 silly install resolved     version: '1.0.6',
-417 silly install resolved     description: 'Sign and unsign cookies',
-417 silly install resolved     keywords: [ 'cookie', 'sign', 'unsign' ],
-417 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     repository:
-417 silly install resolved      { type: 'git',
-417 silly install resolved        url: 'git+https://github.com/visionmedia/node-cookie-signature.git' },
-417 silly install resolved     dependencies: {},
-417 silly install resolved     devDependencies: { mocha: '*', should: '*' },
-417 silly install resolved     scripts: { test: 'mocha --require should --reporter spec' },
-417 silly install resolved     main: 'index',
-417 silly install resolved     gitHead: '391b56cf44d88c493491b7e3fc53208cfb976d2a',
-417 silly install resolved     bugs: { url: 'https://github.com/visionmedia/node-cookie-signature/issues' },
-417 silly install resolved     homepage: 'https://github.com/visionmedia/node-cookie-signature',
-417 silly install resolved     _id: 'cookie-signature@1.0.6',
-417 silly install resolved     _shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
-417 silly install resolved     _from: 'cookie-signature@1.0.6',
-417 silly install resolved     _npmVersion: '2.3.0',
-417 silly install resolved     _nodeVersion: '0.10.36',
-417 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
-417 silly install resolved     maintainers: [ [Object], [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz',
-417 silly install resolved     readme: 'ERROR: No README data found!' },
-417 silly install resolved   { name: 'cookie',
-417 silly install resolved     description: 'HTTP server cookie parsing and serialization',
-417 silly install resolved     version: '0.3.1',
-417 silly install resolved     author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
-417 silly install resolved     contributors: [ [Object] ],
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     keywords: [ 'cookie', 'cookies' ],
-417 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/jshttp/cookie.git' },
-417 silly install resolved     devDependencies: { istanbul: '0.4.3', mocha: '1.21.5' },
-417 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'index.js' ],
-417 silly install resolved     engines: { node: '>= 0.6' },
-417 silly install resolved     scripts:
-417 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
-417 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
-417 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/' },
-417 silly install resolved     gitHead: 'e3c77d497d66c8b8d4b677b8954c1b192a09f0b3',
-417 silly install resolved     bugs: { url: 'https://github.com/jshttp/cookie/issues' },
-417 silly install resolved     homepage: 'https://github.com/jshttp/cookie',
-417 silly install resolved     _id: 'cookie@0.3.1',
-417 silly install resolved     _shasum: 'e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb',
-417 silly install resolved     _from: 'cookie@0.3.1',
-417 silly install resolved     _npmVersion: '1.4.28',
-417 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-417 silly install resolved     maintainers: [ [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz' },
-417 silly install resolved     _npmOperationalInternal:
-417 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
-417 silly install resolved        tmp: 'tmp/cookie-0.3.1.tgz_1464323556714_0.6435900838114321' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz',
-417 silly install resolved     readme: 'ERROR: No README data found!' },
-417 silly install resolved   { name: 'crc',
-417 silly install resolved     version: '3.4.0',
-417 silly install resolved     description: 'Module for calculating Cyclic Redundancy Check (CRC) for Node.js and the Browser.',
-417 silly install resolved     keywords: [ 'crc' ],
-417 silly install resolved     files: [ 'lib' ],
-417 silly install resolved     main: './lib/index.js',
-417 silly install resolved     scripts:
-417 silly install resolved      { test: 'mocha test/*.test.js',
-417 silly install resolved        pretest: 'cd src && babel --out-dir ../lib *.js' },
-417 silly install resolved     author:
-417 silly install resolved      { name: 'Alex Gorbatchev',
-417 silly install resolved        url: 'https://github.com/alexgorbatchev' },
-417 silly install resolved     devDependencies:
-417 silly install resolved      { 'babel-core': '^6.1.21',
-417 silly install resolved        'babel-preset-es2015': '^6.1.18',
-417 silly install resolved        'beautify-benchmark': '^0.2.4',
-417 silly install resolved        benchmark: '^1.0.0',
-417 silly install resolved        'buffer-crc32': '^0.2.3',
-417 silly install resolved        chai: '^3.4.1',
-417 silly install resolved        mocha: '*',
-417 silly install resolved        seedrandom: '^2.3.6' },
-417 silly install resolved     homepage: 'https://github.com/alexgorbatchev/node-crc',
-417 silly install resolved     bugs: { url: 'https://github.com/alexgorbatchev/node-crc/issues' },
-417 silly install resolved     repository:
-417 silly install resolved      { type: 'git',
-417 silly install resolved        url: 'git://github.com/alexgorbatchev/node-crc.git' },
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     babel: { presets: [Object] },
-417 silly install resolved     gitHead: '3726e792cb4a328ef2d935cfd896e54fa9529aaf',
-417 silly install resolved     _id: 'crc@3.4.0',
-417 silly install resolved     _shasum: '4258e351613a74ef1153dfcb05e820c3e9715d7f',
-417 silly install resolved     _from: 'crc@3.4.0',
-417 silly install resolved     _npmVersion: '2.11.3',
-417 silly install resolved     _nodeVersion: '0.12.7',
-417 silly install resolved     _npmUser: { name: 'alexgorbatchev', email: 'alex.gorbatchev@gmail.com' },
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: '4258e351613a74ef1153dfcb05e820c3e9715d7f',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/crc/-/crc-3.4.0.tgz' },
-417 silly install resolved     maintainers: [ [Object] ],
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/crc/-/crc-3.4.0.tgz' },
-417 silly install resolved   { name: 'uid-safe',
-417 silly install resolved     description: 'URL and cookie safe UIDs',
-417 silly install resolved     version: '2.1.2',
-417 silly install resolved     contributors: [ [Object], [Object] ],
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     repository: { type: 'git', url: 'https://github.com/crypto-utils/uid-safe' },
-417 silly install resolved     dependencies: { 'base64-url': '1.3.2', 'random-bytes': '~1.0.0' },
-417 silly install resolved     devDependencies:
-417 silly install resolved      { bluebird: '3.4.1',
-417 silly install resolved        eslint: '2.13.1',
-417 silly install resolved        'eslint-config-standard': '5.3.5',
-417 silly install resolved        'eslint-plugin-promise': '2.0.1',
-417 silly install resolved        'eslint-plugin-standard': '2.0.0',
-417 silly install resolved        istanbul: '0.4.4',
-417 silly install resolved        mocha: '2.5.3' },
-417 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
-417 silly install resolved     engines: { node: '>= 0.8' },
-417 silly install resolved     scripts:
-417 silly install resolved      { lint: 'eslint **/*.js',
-417 silly install resolved        test: 'mocha --trace-deprecation --reporter spec --bail --check-leaks test/',
-417 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --trace-deprecation --reporter dot --check-leaks test/',
-417 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --trace-deprecation --reporter spec --check-leaks test/' },
-417 silly install resolved     keywords: [ 'random', 'generator', 'uid', 'safe' ],
-417 silly install resolved     gitHead: '32285798f2d803ac9442aae092943346a97c1d11',
-417 silly install resolved     bugs: { url: 'https://github.com/crypto-utils/uid-safe/issues' },
-417 silly install resolved     homepage: 'https://github.com/crypto-utils/uid-safe',
-417 silly install resolved     _id: 'uid-safe@2.1.2',
-417 silly install resolved     _shasum: 'c934b3caead0fdcd0fb2cff3a8876d06fe0ee0fd',
-417 silly install resolved     _from: 'uid-safe@>=2.1.2 <2.2.0',
-417 silly install resolved     _npmVersion: '1.4.28',
-417 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-417 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'c934b3caead0fdcd0fb2cff3a8876d06fe0ee0fd',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz' },
-417 silly install resolved     _npmOperationalInternal:
-417 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
-417 silly install resolved        tmp: 'tmp/uid-safe-2.1.2.tgz_1471284806211_0.030802547931671143' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.2.tgz' },
-417 silly install resolved   { name: 'parseurl',
-417 silly install resolved     description: 'parse a url with memoization',
-417 silly install resolved     version: '1.3.1',
-417 silly install resolved     author:
-417 silly install resolved      { name: 'Jonathan Ong',
-417 silly install resolved        email: 'me@jongleberry.com',
-417 silly install resolved        url: 'http://jongleberry.com' },
-417 silly install resolved     contributors: [ [Object] ],
-417 silly install resolved     repository:
-417 silly install resolved      { type: 'git',
-417 silly install resolved        url: 'git+https://github.com/pillarjs/parseurl.git' },
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     devDependencies:
-417 silly install resolved      { benchmark: '2.0.0',
-417 silly install resolved        'beautify-benchmark': '0.2.4',
-417 silly install resolved        'fast-url-parser': '1.1.3',
-417 silly install resolved        istanbul: '0.4.2',
-417 silly install resolved        mocha: '~1.21.5' },
-417 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
-417 silly install resolved     engines: { node: '>= 0.8' },
-417 silly install resolved     scripts:
-417 silly install resolved      { bench: 'node benchmark/index.js',
-417 silly install resolved        test: 'mocha --check-leaks --bail --reporter spec test/',
-417 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/',
-417 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/' },
-417 silly install resolved     gitHead: '6d22d376d75b927ab2b5347ce3a1d6735133dd43',
-417 silly install resolved     bugs: { url: 'https://github.com/pillarjs/parseurl/issues' },
-417 silly install resolved     homepage: 'https://github.com/pillarjs/parseurl',
-417 silly install resolved     _id: 'parseurl@1.3.1',
-417 silly install resolved     _shasum: 'c8ab8c9223ba34888aa64a297b28853bec18da56',
-417 silly install resolved     _from: 'parseurl@>=1.3.1 <1.4.0',
-417 silly install resolved     _npmVersion: '1.4.28',
-417 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-417 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'c8ab8c9223ba34888aa64a297b28853bec18da56',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/parseurl/-/parseurl-1.3.1.tgz' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/parseurl/-/parseurl-1.3.1.tgz',
-417 silly install resolved     readme: 'ERROR: No README data found!' },
-417 silly install resolved   { name: 'debug',
-417 silly install resolved     version: '2.2.0',
-417 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
-417 silly install resolved     description: 'small debugging utility',
-417 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
-417 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
-417 silly install resolved     contributors: [ [Object] ],
-417 silly install resolved     license: 'MIT',
-417 silly install resolved     dependencies: { ms: '0.7.1' },
-417 silly install resolved     devDependencies: { browserify: '9.0.3', mocha: '*' },
-417 silly install resolved     main: './node.js',
-417 silly install resolved     browser: './browser.js',
-417 silly install resolved     component: { scripts: [Object] },
-417 silly install resolved     gitHead: 'b38458422b5aa8aa6d286b10dfe427e8a67e2b35',
-417 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
-417 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
-417 silly install resolved     _id: 'debug@2.2.0',
-417 silly install resolved     scripts: {},
-417 silly install resolved     _shasum: 'f87057e995b1a1f6ae6a4960664137bc56f039da',
-417 silly install resolved     _from: 'debug@>=2.2.0 <2.3.0',
-417 silly install resolved     _npmVersion: '2.7.4',
-417 silly install resolved     _nodeVersion: '0.12.2',
-417 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
-417 silly install resolved     maintainers: [ [Object], [Object] ],
-417 silly install resolved     dist:
-417 silly install resolved      { shasum: 'f87057e995b1a1f6ae6a4960664137bc56f039da',
-417 silly install resolved        tarball: 'https://registry.npmjs.org/debug/-/debug-2.2.0.tgz' },
-417 silly install resolved     directories: {},
-417 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.2.0.tgz',
-417 silly install resolved     readme: 'ERROR: No README data found!' } ]
-418 info install depd@1.1.0 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-419 info install utils-merge@1.0.0 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-420 info install on-headers@1.0.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-421 info install cookie-signature@1.0.6 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-422 info install cookie@0.3.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-423 info install crc@3.4.0 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-424 info install uid-safe@2.1.2 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-425 info install parseurl@1.3.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-426 info install debug@2.2.0 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-427 info installOne depd@1.1.0
-428 verbose installOne of depd to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-429 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-430 info installOne utils-merge@1.0.0
-431 verbose installOne of utils-merge to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-432 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-433 info installOne on-headers@1.0.1
-434 verbose installOne of on-headers to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-435 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-436 info installOne cookie-signature@1.0.6
-437 verbose installOne of cookie-signature to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-438 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-439 info installOne cookie@0.3.1
-440 verbose installOne of cookie to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-441 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-442 info installOne crc@3.4.0
-443 verbose installOne of crc to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-444 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-445 info installOne uid-safe@2.1.2
-446 verbose installOne of uid-safe to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-447 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-448 info installOne parseurl@1.3.1
-449 verbose installOne of parseurl to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-450 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-451 info installOne debug@2.2.0
-452 verbose installOne of debug to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session not in flight; installing
-453 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-454 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\utils-merge-cd76cff1db561d2d.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-455 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\cookie-signature-3a3c6a1e7c8a54af.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-456 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\cookie-7adb7c9b7b786e17.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-457 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\depd-d7eb27d2fb83df56.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-458 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\crc-ff86fc908f1a89c9.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-459 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\uid-safe-69276d6581b0e6ab.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-460 silly install write writing utils-merge 1.0.0 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-461 silly install write writing cookie-signature 1.0.6 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-462 silly install write writing cookie 0.3.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-463 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\parseurl-bc593a69f00fe265.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-464 silly install write writing depd 1.1.0 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-465 silly install write writing crc 3.4.0 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-466 silly install write writing uid-safe 2.1.2 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-467 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\on-headers-1f234d351f0eb2f7.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-468 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\debug-1d7e8ddd9b26227f.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-469 silly install write writing parseurl 1.3.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-470 silly install write writing on-headers 1.0.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-471 silly install write writing debug 2.2.0 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-472 verbose unbuild node_modules\express-session\node_modules\utils-merge
-473 verbose unbuild node_modules\express-session\node_modules\cookie-signature
-474 verbose unbuild node_modules\express-session\node_modules\cookie
-475 verbose unbuild node_modules\express-session\node_modules\depd
-476 verbose unbuild node_modules\express-session\node_modules\crc
-477 verbose unbuild node_modules\express-session\node_modules\uid-safe
-478 verbose unbuild node_modules\express-session\node_modules\parseurl
-479 verbose unbuild node_modules\express-session\node_modules\on-headers
-480 verbose unbuild node_modules\express-session\node_modules\debug
-481 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-482 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-483 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-484 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-485 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-486 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-487 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-488 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-489 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-490 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-491 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-492 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-493 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\utils-merge\1.0.0\package.tgz
-494 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-495 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge is being purged
-496 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-497 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\cookie\0.3.1\package.tgz
-498 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-499 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie is being purged
-500 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-501 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\cookie-signature\1.0.6\package.tgz
-502 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-503 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature is being purged
-504 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-505 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\crc\3.4.0\package.tgz
-506 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-507 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc is being purged
-508 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-509 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\depd\1.1.0\package.tgz
-510 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-511 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd is being purged
-512 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-513 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-514 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-515 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-516 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-517 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\uid-safe\2.1.2\package.tgz
-518 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-519 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe is being purged
-520 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-521 silly gunzTarPerm modes [ '777', '666' ]
-522 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-523 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-524 silly gunzTarPerm modes [ '777', '666' ]
-525 silly gunzTarPerm modes [ '777', '666' ]
-526 silly gunzTarPerm modes [ '777', '666' ]
-527 silly gunzTarPerm modes [ '777', '666' ]
-528 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\parseurl\1.3.1\package.tgz
-529 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-530 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl is being purged
-531 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-532 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\on-headers\1.0.1\package.tgz
-533 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-534 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers is being purged
-535 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-536 silly gunzTarPerm modes [ '777', '666' ]
-537 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\debug\2.2.0\package.tgz
-538 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-539 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug is being purged
-540 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-541 silly gunzTarPerm modes [ '777', '666' ]
-542 silly gunzTarPerm modes [ '777', '666' ]
-543 silly gunzTarPerm modes [ '777', '666' ]
-544 silly gunzTarPerm extractEntry package.json
-545 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-546 silly gunzTarPerm extractEntry package.json
-547 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-548 silly gunzTarPerm extractEntry package.json
-549 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-550 silly gunzTarPerm extractEntry package.json
-551 silly gunzTarPerm extractEntry package.json
-552 silly gunzTarPerm extractEntry package.json
-553 silly gunzTarPerm extractEntry package.json
-554 silly gunzTarPerm extractEntry package.json
-555 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-556 silly gunzTarPerm extractEntry package.json
-557 silly gunzTarPerm extractEntry README.md
-558 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-559 silly gunzTarPerm extractEntry LICENSE
-560 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-561 silly gunzTarPerm extractEntry .npmignore
-562 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-563 silly gunzTarPerm extractEntry index.js
-564 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-565 silly gunzTarPerm extractEntry README.md
-566 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-567 silly gunzTarPerm extractEntry LICENSE
-568 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-569 silly gunzTarPerm extractEntry README.md
-570 silly gunzTarPerm extractEntry LICENSE
-571 silly gunzTarPerm extractEntry LICENSE
-572 silly gunzTarPerm extractEntry index.js
-573 silly gunzTarPerm extractEntry README.md
-574 silly gunzTarPerm extractEntry LICENSE
-575 silly gunzTarPerm extractEntry README.md
-576 silly gunzTarPerm extractEntry LICENSE
-577 silly gunzTarPerm extractEntry .npmignore
-578 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-579 silly gunzTarPerm extractEntry node.js
-580 silly gunzTarPerm modified mode [ 'node.js', 420, 438 ]
-581 silly gunzTarPerm extractEntry README.md
-582 silly gunzTarPerm extractEntry LICENSE
-583 silly gunzTarPerm extractEntry History.md
-584 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
-585 silly gunzTarPerm extractEntry Readme.md
-586 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
-587 silly gunzTarPerm extractEntry index.js
-588 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-589 silly gunzTarPerm extractEntry .travis.yml
-590 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
-591 silly gunzTarPerm extractEntry index.js
-592 silly gunzTarPerm extractEntry HISTORY.md
-593 silly gunzTarPerm extractEntry index.js
-594 silly gunzTarPerm extractEntry HISTORY.md
-595 silly gunzTarPerm extractEntry History.md
-596 silly gunzTarPerm extractEntry Readme.md
-597 silly gunzTarPerm extractEntry lib/browser/index.js
-598 silly gunzTarPerm extractEntry lib/compat/buffer-concat.js
-599 silly gunzTarPerm extractEntry lib/compat/callsite-tostring.js
-600 silly gunzTarPerm extractEntry lib/compat/event-listener-count.js
-601 silly gunzTarPerm extractEntry lib/compat/index.js
-602 silly gunzTarPerm extractEntry index.js
-603 silly gunzTarPerm extractEntry HISTORY.md
-604 silly gunzTarPerm extractEntry lib/crc1.js
-605 silly gunzTarPerm modified mode [ 'lib/crc1.js', 420, 438 ]
-606 silly gunzTarPerm extractEntry lib/crc16_ccitt.js
-607 silly gunzTarPerm modified mode [ 'lib/crc16_ccitt.js', 420, 438 ]
-608 silly gunzTarPerm extractEntry index.js
-609 silly gunzTarPerm extractEntry HISTORY.md
-610 silly gunzTarPerm extractEntry debug.js
-611 silly gunzTarPerm modified mode [ 'debug.js', 420, 438 ]
-612 silly gunzTarPerm extractEntry browser.js
-613 silly gunzTarPerm modified mode [ 'browser.js', 420, 438 ]
-614 silly gunzTarPerm extractEntry Readme.md
-615 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
-616 silly gunzTarPerm extractEntry lib/crc16_kermit.js
-617 silly gunzTarPerm modified mode [ 'lib/crc16_kermit.js', 420, 438 ]
-618 silly gunzTarPerm extractEntry lib/crc16_modbus.js
-619 silly gunzTarPerm modified mode [ 'lib/crc16_modbus.js', 420, 438 ]
-620 silly gunzTarPerm extractEntry lib/crc16_xmodem.js
-621 silly gunzTarPerm modified mode [ 'lib/crc16_xmodem.js', 420, 438 ]
-622 silly gunzTarPerm extractEntry lib/crc16.js
-623 silly gunzTarPerm modified mode [ 'lib/crc16.js', 420, 438 ]
-624 silly gunzTarPerm extractEntry lib/crc32.js
-625 silly gunzTarPerm modified mode [ 'lib/crc32.js', 420, 438 ]
-626 silly gunzTarPerm extractEntry lib/crc8.js
-627 silly gunzTarPerm modified mode [ 'lib/crc8.js', 420, 438 ]
-628 silly gunzTarPerm extractEntry lib/crc8_1wire.js
-629 silly gunzTarPerm modified mode [ 'lib/crc8_1wire.js', 420, 438 ]
-630 silly gunzTarPerm extractEntry lib/define_crc.js
-631 silly gunzTarPerm modified mode [ 'lib/define_crc.js', 420, 438 ]
-632 silly gunzTarPerm extractEntry lib/index.js
-633 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
-634 silly gunzTarPerm extractEntry lib/crc24.js
-635 silly gunzTarPerm modified mode [ 'lib/crc24.js', 420, 438 ]
-636 silly gunzTarPerm extractEntry bower.json
-637 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
-638 silly gunzTarPerm extractEntry .jshintrc
-639 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
-640 silly gunzTarPerm extractEntry component.json
-641 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
-642 silly gunzTarPerm extractEntry Makefile
-643 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
-644 silly gunzTarPerm extractEntry History.md
-645 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
-646 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge\package.json
-647 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\package.json
-648 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers\package.json
-649 info preinstall utils-merge@1.0.0
-650 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge\package.json
-651 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature\package.json
-652 info preinstall uid-safe@2.1.2
-653 info preinstall on-headers@1.0.1
-654 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie\package.json
-655 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl\package.json
-656 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\package.json
-657 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers\package.json
-658 info preinstall cookie-signature@1.0.6
-659 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature\package.json
-660 info preinstall cookie@0.3.1
-661 info preinstall parseurl@1.3.1
-662 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie\package.json
-663 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge\package.json
-664 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl\package.json
-665 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature\package.json
-666 silly prepareForInstallMany adding base64-url@1.3.2 from uid-safe dependencies
-667 silly prepareForInstallMany adding random-bytes@~1.0.0 from uid-safe dependencies
-668 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\package.json
-669 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers\package.json
-670 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie\package.json
-671 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl\package.json
-672 silly install resolved []
-673 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-674 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-675 silly install resolved []
-676 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-677 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-678 silly install resolved []
-679 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-680 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-681 silly install resolved []
-682 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-683 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-684 info linkStuff cookie-signature@1.0.6
-685 silly linkStuff cookie-signature@1.0.6 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-686 silly install resolved []
-687 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-688 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-689 info linkStuff cookie@0.3.1
-690 silly linkStuff cookie@0.3.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-691 silly cache add args [ 'base64-url@1.3.2', null ]
-692 verbose cache add spec base64-url@1.3.2
-693 silly cache add parsed spec Result {
-693 silly cache add   raw: 'base64-url@1.3.2',
-693 silly cache add   scope: null,
-693 silly cache add   name: 'base64-url',
-693 silly cache add   rawSpec: '1.3.2',
-693 silly cache add   spec: '1.3.2',
-693 silly cache add   type: 'version' }
-694 silly addNamed base64-url@1.3.2
-695 verbose addNamed "1.3.2" is a plain semver version for base64-url
-696 silly mapToRegistry name base64-url
-697 silly mapToRegistry using default registry
-698 silly mapToRegistry registry https://registry.npmjs.org/
-699 silly mapToRegistry data Result {
-699 silly mapToRegistry   raw: 'base64-url',
-699 silly mapToRegistry   scope: null,
-699 silly mapToRegistry   name: 'base64-url',
-699 silly mapToRegistry   rawSpec: '',
-699 silly mapToRegistry   spec: 'latest',
-699 silly mapToRegistry   type: 'tag' }
-700 silly mapToRegistry uri https://registry.npmjs.org/base64-url
-701 verbose addNameVersion registry:https://registry.npmjs.org/base64-url not in flight; fetching
-702 silly cache add args [ 'random-bytes@~1.0.0', null ]
-703 verbose cache add spec random-bytes@~1.0.0
-704 silly cache add parsed spec Result {
-704 silly cache add   raw: 'random-bytes@~1.0.0',
-704 silly cache add   scope: null,
-704 silly cache add   name: 'random-bytes',
-704 silly cache add   rawSpec: '~1.0.0',
-704 silly cache add   spec: '>=1.0.0 <1.1.0',
-704 silly cache add   type: 'range' }
-705 silly addNamed random-bytes@>=1.0.0 <1.1.0
-706 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for random-bytes
-707 silly addNameRange { name: 'random-bytes', range: '>=1.0.0 <1.1.0', hasData: false }
-708 silly mapToRegistry name random-bytes
-709 silly mapToRegistry using default registry
-710 silly mapToRegistry registry https://registry.npmjs.org/
-711 silly mapToRegistry data Result {
-711 silly mapToRegistry   raw: 'random-bytes',
-711 silly mapToRegistry   scope: null,
-711 silly mapToRegistry   name: 'random-bytes',
-711 silly mapToRegistry   rawSpec: '',
-711 silly mapToRegistry   spec: 'latest',
-711 silly mapToRegistry   type: 'tag' }
-712 silly mapToRegistry uri https://registry.npmjs.org/random-bytes
-713 verbose addNameRange registry:https://registry.npmjs.org/random-bytes not in flight; fetching
-714 info linkStuff parseurl@1.3.1
-715 silly linkStuff parseurl@1.3.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-716 verbose request uri https://registry.npmjs.org/base64-url
-717 verbose request no auth needed
-718 info attempt registry request try #1 at 15:52:08
-719 http request GET https://registry.npmjs.org/base64-url
-720 verbose request uri https://registry.npmjs.org/random-bytes
-721 verbose request no auth needed
-722 info attempt registry request try #1 at 15:52:08
-723 http request GET https://registry.npmjs.org/random-bytes
-724 info linkStuff utils-merge@1.0.0
-725 silly linkStuff utils-merge@1.0.0 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-726 verbose linkBins cookie-signature@1.0.6
-727 verbose linkMans cookie-signature@1.0.6
-728 verbose rebuildBundles cookie-signature@1.0.6
-729 info linkStuff on-headers@1.0.1
-730 silly linkStuff on-headers@1.0.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-731 info install cookie-signature@1.0.6
-732 info postinstall cookie-signature@1.0.6
-733 verbose linkBins parseurl@1.3.1
-734 verbose linkMans parseurl@1.3.1
-735 verbose rebuildBundles parseurl@1.3.1
-736 verbose linkBins cookie@0.3.1
-737 verbose linkMans cookie@0.3.1
-738 verbose rebuildBundles cookie@0.3.1
-739 info install parseurl@1.3.1
-740 info install cookie@0.3.1
-741 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\cookie-signature-3a3c6a1e7c8a54af.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie-signature
-742 info postinstall parseurl@1.3.1
-743 info postinstall cookie@0.3.1
-744 verbose linkBins utils-merge@1.0.0
-745 verbose linkMans utils-merge@1.0.0
-746 verbose rebuildBundles utils-merge@1.0.0
-747 info install utils-merge@1.0.0
-748 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\parseurl-bc593a69f00fe265.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\parseurl
-749 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\cookie-7adb7c9b7b786e17.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\cookie
-750 info postinstall utils-merge@1.0.0
-751 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\package.json
-752 verbose linkBins on-headers@1.0.1
-753 verbose linkMans on-headers@1.0.1
-754 verbose rebuildBundles on-headers@1.0.1
-755 info install on-headers@1.0.1
-756 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\utils-merge-cd76cff1db561d2d.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\utils-merge
-757 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd\package.json
-758 info postinstall on-headers@1.0.1
-759 info preinstall debug@2.2.0
-760 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\package.json
-761 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\on-headers-1f234d351f0eb2f7.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\on-headers
-762 info preinstall depd@1.1.0
-763 silly prepareForInstallMany adding ms@0.7.1 from debug dependencies
-764 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\package.json
-765 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd\package.json
-766 silly cache add args [ 'ms@0.7.1', null ]
-767 verbose cache add spec ms@0.7.1
-768 silly cache add parsed spec Result {
-768 silly cache add   raw: 'ms@0.7.1',
-768 silly cache add   scope: null,
-768 silly cache add   name: 'ms',
-768 silly cache add   rawSpec: '0.7.1',
-768 silly cache add   spec: '0.7.1',
-768 silly cache add   type: 'version' }
-769 silly addNamed ms@0.7.1
-770 verbose addNamed "0.7.1" is a plain semver version for ms
-771 silly mapToRegistry name ms
-772 silly mapToRegistry using default registry
-773 silly mapToRegistry registry https://registry.npmjs.org/
-774 silly mapToRegistry data Result {
-774 silly mapToRegistry   raw: 'ms',
-774 silly mapToRegistry   scope: null,
-774 silly mapToRegistry   name: 'ms',
-774 silly mapToRegistry   rawSpec: '',
-774 silly mapToRegistry   spec: 'latest',
-774 silly mapToRegistry   type: 'tag' }
-775 silly mapToRegistry uri https://registry.npmjs.org/ms
-776 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
-777 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd\package.json
-778 verbose request uri https://registry.npmjs.org/ms
-779 verbose request no auth needed
-780 info attempt registry request try #1 at 15:52:08
-781 verbose etag "9RMFA4DS3Q1LDQ317LYQUBNGG"
-782 http request GET https://registry.npmjs.org/ms
-783 silly install resolved []
-784 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-785 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-786 info linkStuff depd@1.1.0
-787 silly linkStuff depd@1.1.0 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-788 verbose linkBins depd@1.1.0
-789 verbose linkMans depd@1.1.0
-790 verbose rebuildBundles depd@1.1.0
-791 info install depd@1.1.0
-792 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc\package.json
-793 info postinstall depd@1.1.0
-794 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\depd-d7eb27d2fb83df56.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\depd
-795 info preinstall crc@3.4.0
-796 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc\package.json
-797 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc\package.json
-798 silly install resolved []
-799 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-800 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-801 info linkStuff crc@3.4.0
-802 silly linkStuff crc@3.4.0 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-803 verbose linkBins crc@3.4.0
-804 verbose linkMans crc@3.4.0
-805 verbose rebuildBundles crc@3.4.0
-806 info install crc@3.4.0
-807 info postinstall crc@3.4.0
-808 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\crc-ff86fc908f1a89c9.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\crc
-809 http 200 https://registry.npmjs.org/base64-url
-810 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-810 verbose headers   etag: '"14KRB9HFVKV5A4DTNL2E5FQ6L"',
-810 verbose headers   'content-type': 'application/json',
-810 verbose headers   'content-encoding': 'gzip',
-810 verbose headers   'cache-control': 'max-age=300',
-810 verbose headers   'content-length': '2472',
-810 verbose headers   'accept-ranges': 'bytes',
-810 verbose headers   date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-810 verbose headers   via: '1.1 varnish',
-810 verbose headers   age: '197',
-810 verbose headers   connection: 'keep-alive',
-810 verbose headers   'x-served-by': 'cache-jfk8133-JFK',
-810 verbose headers   'x-cache': 'HIT',
-810 verbose headers   'x-cache-hits': '11',
-810 verbose headers   'x-timer': 'S1475092328.395162,VS0,VE0',
-810 verbose headers   vary: 'Accept-Encoding' }
-811 silly get cb [ 200,
-811 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-811 silly get     etag: '"14KRB9HFVKV5A4DTNL2E5FQ6L"',
-811 silly get     'content-type': 'application/json',
-811 silly get     'content-encoding': 'gzip',
-811 silly get     'cache-control': 'max-age=300',
-811 silly get     'content-length': '2472',
-811 silly get     'accept-ranges': 'bytes',
-811 silly get     date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-811 silly get     via: '1.1 varnish',
-811 silly get     age: '197',
-811 silly get     connection: 'keep-alive',
-811 silly get     'x-served-by': 'cache-jfk8133-JFK',
-811 silly get     'x-cache': 'HIT',
-811 silly get     'x-cache-hits': '11',
-811 silly get     'x-timer': 'S1475092328.395162,VS0,VE0',
-811 silly get     vary: 'Accept-Encoding' } ]
-812 verbose get saving base64-url to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\base64-url\.cache.json
-813 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-814 http 200 https://registry.npmjs.org/random-bytes
-815 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-815 verbose headers   etag: '"37NGILVNB60DSSQO7FWMXWU7K"',
-815 verbose headers   'content-type': 'application/json',
-815 verbose headers   'content-encoding': 'gzip',
-815 verbose headers   'cache-control': 'max-age=300',
-815 verbose headers   'content-length': '1705',
-815 verbose headers   'accept-ranges': 'bytes',
-815 verbose headers   date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-815 verbose headers   via: '1.1 varnish',
-815 verbose headers   age: '108',
-815 verbose headers   connection: 'keep-alive',
-815 verbose headers   'x-served-by': 'cache-jfk8120-JFK',
-815 verbose headers   'x-cache': 'HIT',
-815 verbose headers   'x-cache-hits': '2',
-815 verbose headers   'x-timer': 'S1475092328.397772,VS0,VE0',
-815 verbose headers   vary: 'Accept-Encoding' }
-816 silly get cb [ 200,
-816 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-816 silly get     etag: '"37NGILVNB60DSSQO7FWMXWU7K"',
-816 silly get     'content-type': 'application/json',
-816 silly get     'content-encoding': 'gzip',
-816 silly get     'cache-control': 'max-age=300',
-816 silly get     'content-length': '1705',
-816 silly get     'accept-ranges': 'bytes',
-816 silly get     date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-816 silly get     via: '1.1 varnish',
-816 silly get     age: '108',
-816 silly get     connection: 'keep-alive',
-816 silly get     'x-served-by': 'cache-jfk8120-JFK',
-816 silly get     'x-cache': 'HIT',
-816 silly get     'x-cache-hits': '2',
-816 silly get     'x-timer': 'S1475092328.397772,VS0,VE0',
-816 silly get     vary: 'Accept-Encoding' } ]
-817 verbose get saving random-bytes to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\random-bytes\.cache.json
-818 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-819 silly mapToRegistry name base64-url
-820 silly mapToRegistry using default registry
-821 silly mapToRegistry registry https://registry.npmjs.org/
-822 silly mapToRegistry data Result {
-822 silly mapToRegistry   raw: 'base64-url',
-822 silly mapToRegistry   scope: null,
-822 silly mapToRegistry   name: 'base64-url',
-822 silly mapToRegistry   rawSpec: '',
-822 silly mapToRegistry   spec: 'latest',
-822 silly mapToRegistry   type: 'tag' }
-823 silly mapToRegistry uri https://registry.npmjs.org/base64-url
-824 verbose addRemoteTarball https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz not in flight; adding
-825 verbose addRemoteTarball [ 'https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz',
-825 verbose addRemoteTarball   '4b08113b49d23889f306be64372762d31412f7a8' ]
-826 silly addNameRange number 2 { name: 'random-bytes', range: '>=1.0.0 <1.1.0', hasData: true }
-827 silly addNameRange versions [ 'random-bytes', [ '1.0.0' ] ]
-828 silly addNamed random-bytes@1.0.0
-829 verbose addNamed "1.0.0" is a plain semver version for random-bytes
-830 silly mapToRegistry name random-bytes
-831 silly mapToRegistry using default registry
-832 silly mapToRegistry registry https://registry.npmjs.org/
-833 silly mapToRegistry data Result {
-833 silly mapToRegistry   raw: 'random-bytes',
-833 silly mapToRegistry   scope: null,
-833 silly mapToRegistry   name: 'random-bytes',
-833 silly mapToRegistry   rawSpec: '',
-833 silly mapToRegistry   spec: 'latest',
-833 silly mapToRegistry   type: 'tag' }
-834 silly mapToRegistry uri https://registry.npmjs.org/random-bytes
-835 verbose addRemoteTarball https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz not in flight; adding
-836 verbose addRemoteTarball [ 'https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz',
-836 verbose addRemoteTarball   '4f68a1dc0ae58bd3fb95848c30324db75d64360b' ]
-837 info retry fetch attempt 1 at 15:52:08
-838 info attempt registry request try #1 at 15:52:08
-839 http fetch GET https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz
-840 info retry fetch attempt 1 at 15:52:08
-841 info attempt registry request try #1 at 15:52:08
-842 http fetch GET https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz
-843 http fetch 200 https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz
-844 silly fetchAndShaCheck shasum 4b08113b49d23889f306be64372762d31412f7a8
-845 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\base64-url\-\base64-url-1.3.2.tgz not in flight; adding
-846 verbose addTmpTarball already have metadata; skipping unpack for base64-url@1.3.2
-847 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-848 silly cache afterAdd base64-url@1.3.2
-849 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\base64-url\1.3.2\package\package.json not in flight; writing
-850 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-851 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\base64-url\1.3.2\package\package.json written
-852 http fetch 200 https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz
-853 silly fetchAndShaCheck shasum 4f68a1dc0ae58bd3fb95848c30324db75d64360b
-854 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\random-bytes\-\random-bytes-1.0.0.tgz not in flight; adding
-855 verbose addTmpTarball already have metadata; skipping unpack for random-bytes@1.0.0
-856 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-857 silly cache afterAdd random-bytes@1.0.0
-858 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\random-bytes\1.0.0\package\package.json not in flight; writing
-859 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-860 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\random-bytes\1.0.0\package\package.json written
-861 silly install resolved [ { name: 'base64-url',
-861 silly install resolved     version: '1.3.2',
-861 silly install resolved     description: 'Base64 encode, decode, escape and unescape for URL applications',
-861 silly install resolved     main: 'index.js',
-861 silly install resolved     files: [ 'LICENSE', 'README.md', 'index.js' ],
-861 silly install resolved     scripts:
-861 silly install resolved      { test: 'istanbul cover tape test.js',
-861 silly install resolved        lint: 'jshint -c .jshintrc *.js',
-861 silly install resolved        style: 'jscs -p google *.js',
-861 silly install resolved        'coverage:check': 'istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100',
-861 silly install resolved        coverage: 'open coverage/lcov-report/index.html' },
-861 silly install resolved     repository:
-861 silly install resolved      { type: 'git',
-861 silly install resolved        url: 'git://github.com/joaquimserafim/base64-url.git' },
-861 silly install resolved     keywords: [ 'base64', 'base64url' ],
-861 silly install resolved     author: { name: '@joaquimserafim' },
-861 silly install resolved     license: 'ISC',
-861 silly install resolved     bugs: { url: 'https://github.com/joaquimserafim/base64-url/issues' },
-861 silly install resolved     homepage: 'https://github.com/joaquimserafim/base64-url',
-861 silly install resolved     devDependencies:
-861 silly install resolved      { istanbul: '^0.3.5',
-861 silly install resolved        jscs: '^1.9.0',
-861 silly install resolved        jshint: '^2.5.11',
-861 silly install resolved        'pre-commit': '^1.1.3',
-861 silly install resolved        tape: '^4.6.0' },
-861 silly install resolved     'pre-commit': [ 'lint', 'style', 'test', 'coverage:check' ],
-861 silly install resolved     gitHead: '356442c220fe38d00fa34078519c9b3ac31b1312',
-861 silly install resolved     _id: 'base64-url@1.3.2',
-861 silly install resolved     _shasum: '4b08113b49d23889f306be64372762d31412f7a8',
-861 silly install resolved     _from: 'base64-url@1.3.2',
-861 silly install resolved     _npmVersion: '2.15.0',
-861 silly install resolved     _nodeVersion: '4.4.2',
-861 silly install resolved     _npmUser: { name: 'quim', email: 'joaquim.serafim@gmail.com' },
-861 silly install resolved     dist:
-861 silly install resolved      { shasum: '4b08113b49d23889f306be64372762d31412f7a8',
-861 silly install resolved        tarball: 'https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz' },
-861 silly install resolved     maintainers: [ [Object] ],
-861 silly install resolved     _npmOperationalInternal:
-861 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
-861 silly install resolved        tmp: 'tmp/base64-url-1.3.2.tgz_1468593630635_0.8208693880587816' },
-861 silly install resolved     directories: {},
-861 silly install resolved     _resolved: 'https://registry.npmjs.org/base64-url/-/base64-url-1.3.2.tgz' },
-861 silly install resolved   { name: 'random-bytes',
-861 silly install resolved     description: 'URL and cookie safe UIDs',
-861 silly install resolved     version: '1.0.0',
-861 silly install resolved     contributors: [ [Object] ],
-861 silly install resolved     license: 'MIT',
-861 silly install resolved     repository:
-861 silly install resolved      { type: 'git',
-861 silly install resolved        url: 'https://github.com/crypto-utils/random-bytes' },
-861 silly install resolved     devDependencies:
-861 silly install resolved      { bluebird: '3.1.1',
-861 silly install resolved        istanbul: '0.4.2',
-861 silly install resolved        mocha: '2.3.4',
-861 silly install resolved        proxyquire: '1.2.0' },
-861 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
-861 silly install resolved     engines: { node: '>= 0.8' },
-861 silly install resolved     scripts:
-861 silly install resolved      { test: 'mocha --trace-deprecation --reporter spec --bail --check-leaks test/',
-861 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --trace-deprecation --reporter dot --check-leaks test/',
-861 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --trace-deprecation --reporter spec --check-leaks test/' },
-861 silly install resolved     keywords: [ 'bytes', 'generator', 'random', 'safe' ],
-861 silly install resolved     gitHead: '3dcd47425a3dfe858ee8debcd4db0c1222110bc3',
-861 silly install resolved     bugs: { url: 'https://github.com/crypto-utils/random-bytes/issues' },
-861 silly install resolved     homepage: 'https://github.com/crypto-utils/random-bytes',
-861 silly install resolved     _id: 'random-bytes@1.0.0',
-861 silly install resolved     _shasum: '4f68a1dc0ae58bd3fb95848c30324db75d64360b',
-861 silly install resolved     _from: 'random-bytes@>=1.0.0 <1.1.0',
-861 silly install resolved     _npmVersion: '1.4.28',
-861 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
-861 silly install resolved     maintainers: [ [Object] ],
-861 silly install resolved     dist:
-861 silly install resolved      { shasum: '4f68a1dc0ae58bd3fb95848c30324db75d64360b',
-861 silly install resolved        tarball: 'https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz' },
-861 silly install resolved     directories: {},
-861 silly install resolved     _resolved: 'https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz' } ]
-862 info install base64-url@1.3.2 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-863 info install random-bytes@1.0.0 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-864 info installOne base64-url@1.3.2
-865 verbose installOne of base64-url to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe not in flight; installing
-866 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-867 info installOne random-bytes@1.0.0
-868 verbose installOne of random-bytes to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe not in flight; installing
-869 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-870 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\random-bytes-6c2d5c4ac94d406e.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-871 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\base64-url-ff9ebe851a4ac38b.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-872 silly install write writing random-bytes 1.0.0 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-873 silly install write writing base64-url 1.3.2 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-874 verbose unbuild node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-875 verbose unbuild node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-876 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-877 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-878 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\random-bytes\1.0.0\package.tgz
-879 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-880 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes is being purged
-881 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-882 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-883 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-884 silly gunzTarPerm modes [ '777', '666' ]
-885 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\base64-url\1.3.2\package.tgz
-886 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-887 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url is being purged
-888 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-889 silly gunzTarPerm modes [ '777', '666' ]
-890 silly gunzTarPerm extractEntry package.json
-891 silly gunzTarPerm extractEntry package.json
-892 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-893 silly gunzTarPerm extractEntry README.md
-894 silly gunzTarPerm extractEntry LICENSE
-895 silly gunzTarPerm extractEntry README.md
-896 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-897 silly gunzTarPerm extractEntry LICENSE
-898 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-899 silly gunzTarPerm extractEntry index.js
-900 silly gunzTarPerm extractEntry HISTORY.md
-901 silly gunzTarPerm extractEntry index.js
-902 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-903 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes\package.json
-904 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url\package.json
-905 info preinstall random-bytes@1.0.0
-906 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes\package.json
-907 info preinstall base64-url@1.3.2
-908 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url\package.json
-909 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes\package.json
-910 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url\package.json
-911 silly install resolved []
-912 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-913 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-914 silly install resolved []
-915 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-916 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-917 info linkStuff random-bytes@1.0.0
-918 silly linkStuff random-bytes@1.0.0 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules as its parent node_modules
-919 info linkStuff base64-url@1.3.2
-920 silly linkStuff base64-url@1.3.2 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules as its parent node_modules
-921 verbose linkBins random-bytes@1.0.0
-922 verbose linkMans random-bytes@1.0.0
-923 verbose rebuildBundles random-bytes@1.0.0
-924 info install random-bytes@1.0.0
-925 verbose linkBins base64-url@1.3.2
-926 verbose linkMans base64-url@1.3.2
-927 verbose rebuildBundles base64-url@1.3.2
-928 info postinstall random-bytes@1.0.0
-929 info install base64-url@1.3.2
-930 info postinstall base64-url@1.3.2
-931 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\random-bytes-6c2d5c4ac94d406e.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\random-bytes
-932 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\base64-url-ff9ebe851a4ac38b.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe\node_modules\base64-url
-933 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-934 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-935 info linkStuff uid-safe@2.1.2
-936 silly linkStuff uid-safe@2.1.2 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-937 verbose linkBins uid-safe@2.1.2
-938 verbose linkMans uid-safe@2.1.2
-939 verbose rebuildBundles uid-safe@2.1.2
-940 verbose rebuildBundles [ 'base64-url', 'random-bytes' ]
-941 info install uid-safe@2.1.2
-942 info postinstall uid-safe@2.1.2
-943 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\uid-safe-69276d6581b0e6ab.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\uid-safe
-944 http 200 https://registry.npmjs.org/ms
-945 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-945 verbose headers   etag: '"598AK31E6JXAIJ7VU5G79WQ2Y"',
-945 verbose headers   'content-type': 'application/json',
-945 verbose headers   'content-encoding': 'gzip',
-945 verbose headers   'cache-control': 'max-age=300',
-945 verbose headers   'content-length': '2404',
-945 verbose headers   'accept-ranges': 'bytes',
-945 verbose headers   date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-945 verbose headers   via: '1.1 varnish',
-945 verbose headers   age: '60',
-945 verbose headers   connection: 'keep-alive',
-945 verbose headers   'x-served-by': 'cache-jfk8125-JFK',
-945 verbose headers   'x-cache': 'HIT',
-945 verbose headers   'x-cache-hits': '9',
-945 verbose headers   'x-timer': 'S1475092328.486320,VS0,VE0',
-945 verbose headers   vary: 'Accept-Encoding' }
-946 silly get cb [ 200,
-946 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-946 silly get     etag: '"598AK31E6JXAIJ7VU5G79WQ2Y"',
-946 silly get     'content-type': 'application/json',
-946 silly get     'content-encoding': 'gzip',
-946 silly get     'cache-control': 'max-age=300',
-946 silly get     'content-length': '2404',
-946 silly get     'accept-ranges': 'bytes',
-946 silly get     date: 'Wed, 28 Sep 2016 19:52:08 GMT',
-946 silly get     via: '1.1 varnish',
-946 silly get     age: '60',
-946 silly get     connection: 'keep-alive',
-946 silly get     'x-served-by': 'cache-jfk8125-JFK',
-946 silly get     'x-cache': 'HIT',
-946 silly get     'x-cache-hits': '9',
-946 silly get     'x-timer': 'S1475092328.486320,VS0,VE0',
-946 silly get     vary: 'Accept-Encoding' } ]
-947 verbose get saving ms to C:\Users\lvillase\AppData\Roaming\npm-cache\registry.npmjs.org\ms\.cache.json
-948 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-949 silly mapToRegistry name ms
-950 silly mapToRegistry using default registry
-951 silly mapToRegistry registry https://registry.npmjs.org/
-952 silly mapToRegistry data Result {
-952 silly mapToRegistry   raw: 'ms',
-952 silly mapToRegistry   scope: null,
-952 silly mapToRegistry   name: 'ms',
-952 silly mapToRegistry   rawSpec: '',
-952 silly mapToRegistry   spec: 'latest',
-952 silly mapToRegistry   type: 'tag' }
-953 silly mapToRegistry uri https://registry.npmjs.org/ms
-954 verbose addRemoteTarball https://registry.npmjs.org/ms/-/ms-0.7.1.tgz not in flight; adding
-955 verbose addRemoteTarball [ 'https://registry.npmjs.org/ms/-/ms-0.7.1.tgz',
-955 verbose addRemoteTarball   '9cd13c03adbff25b65effde7ce864ee952017098' ]
-956 info retry fetch attempt 1 at 15:52:09
-957 info attempt registry request try #1 at 15:52:09
-958 http fetch GET https://registry.npmjs.org/ms/-/ms-0.7.1.tgz
-959 http fetch 200 https://registry.npmjs.org/ms/-/ms-0.7.1.tgz
-960 silly fetchAndShaCheck shasum 9cd13c03adbff25b65effde7ce864ee952017098
-961 verbose addTmpTarball C:\Users\lvillase\AppData\Local\Temp\npm-10080-5cd49228\registry.npmjs.org\ms\-\ms-0.7.1.tgz not in flight; adding
-962 verbose addTmpTarball already have metadata; skipping unpack for ms@0.7.1
-963 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-964 silly cache afterAdd ms@0.7.1
-965 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\ms\0.7.1\package\package.json not in flight; writing
-966 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-967 verbose afterAdd C:\Users\lvillase\AppData\Roaming\npm-cache\ms\0.7.1\package\package.json written
-968 silly install resolved [ { name: 'ms',
-968 silly install resolved     version: '0.7.1',
-968 silly install resolved     description: 'Tiny ms conversion utility',
-968 silly install resolved     repository: { type: 'git', url: 'git://github.com/guille/ms.js.git' },
-968 silly install resolved     main: './index',
-968 silly install resolved     devDependencies: { mocha: '*', 'expect.js': '*', serve: '*' },
-968 silly install resolved     component: { scripts: [Object] },
-968 silly install resolved     gitHead: '713dcf26d9e6fd9dbc95affe7eff9783b7f1b909',
-968 silly install resolved     bugs: { url: 'https://github.com/guille/ms.js/issues' },
-968 silly install resolved     homepage: 'https://github.com/guille/ms.js',
-968 silly install resolved     _id: 'ms@0.7.1',
-968 silly install resolved     scripts: {},
-968 silly install resolved     _shasum: '9cd13c03adbff25b65effde7ce864ee952017098',
-968 silly install resolved     _from: 'ms@0.7.1',
-968 silly install resolved     _npmVersion: '2.7.5',
-968 silly install resolved     _nodeVersion: '0.12.2',
-968 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
-968 silly install resolved     maintainers: [ [Object] ],
-968 silly install resolved     dist:
-968 silly install resolved      { shasum: '9cd13c03adbff25b65effde7ce864ee952017098',
-968 silly install resolved        tarball: 'https://registry.npmjs.org/ms/-/ms-0.7.1.tgz' },
-968 silly install resolved     directories: {},
-968 silly install resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-0.7.1.tgz' } ]
-969 info install ms@0.7.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-970 info installOne ms@0.7.1
-971 verbose installOne of ms to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug not in flight; installing
-972 verbose correctMkdir C:\Users\lvillase\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-973 verbose lock using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\ms-7570c1a4cfb23dad.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-974 silly install write writing ms 0.7.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-975 verbose unbuild node_modules\express-session\node_modules\debug\node_modules\ms
-976 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
-977 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-978 verbose tar unpack C:\Users\lvillase\AppData\Roaming\npm-cache\ms\0.7.1\package.tgz
-979 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-980 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms is being purged
-981 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-982 silly gunzTarPerm modes [ '777', '666' ]
-983 silly gunzTarPerm extractEntry package.json
-984 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-985 silly gunzTarPerm extractEntry .npmignore
-986 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-987 silly gunzTarPerm extractEntry README.md
-988 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-989 silly gunzTarPerm extractEntry LICENSE
-990 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-991 silly gunzTarPerm extractEntry index.js
-992 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-993 silly gunzTarPerm extractEntry History.md
-994 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
-995 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms\package.json
-996 info preinstall ms@0.7.1
-997 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms\package.json
-998 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms\package.json
-999 silly install resolved []
-1000 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-1001 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-1002 info linkStuff ms@0.7.1
-1003 silly linkStuff ms@0.7.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules as its parent node_modules
-1004 verbose linkBins ms@0.7.1
-1005 verbose linkMans ms@0.7.1
-1006 verbose rebuildBundles ms@0.7.1
-1007 info install ms@0.7.1
-1008 info postinstall ms@0.7.1
-1009 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\ms-7570c1a4cfb23dad.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug\node_modules\ms
-1010 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-1011 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-1012 info linkStuff debug@2.2.0
-1013 silly linkStuff debug@2.2.0 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules as its parent node_modules
-1014 verbose linkBins debug@2.2.0
-1015 verbose linkMans debug@2.2.0
-1016 verbose rebuildBundles debug@2.2.0
-1017 verbose rebuildBundles [ 'ms' ]
-1018 info install debug@2.2.0
-1019 info postinstall debug@2.2.0
-1020 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\debug-1d7e8ddd9b26227f.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\node_modules\debug
-1021 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-1022 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-1023 info linkStuff express-session@1.14.1
-1024 silly linkStuff express-session@1.14.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules as its parent node_modules
-1025 verbose linkBins express-session@1.14.1
-1026 verbose linkMans express-session@1.14.1
-1027 verbose rebuildBundles express-session@1.14.1
-1028 verbose rebuildBundles [ 'cookie',
-1028 verbose rebuildBundles   'cookie-signature',
-1028 verbose rebuildBundles   'crc',
-1028 verbose rebuildBundles   'debug',
-1028 verbose rebuildBundles   'depd',
-1028 verbose rebuildBundles   'on-headers',
-1028 verbose rebuildBundles   'parseurl',
-1028 verbose rebuildBundles   'uid-safe',
-1028 verbose rebuildBundles   'utils-merge' ]
-1029 info install express-session@1.14.1
-1030 info postinstall express-session@1.14.1
-1031 verbose unlock done using C:\Users\lvillase\AppData\Roaming\npm-cache\_locks\express-session-c65fcc400ecc02c1.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session
-1032 verbose validateInstall loading C:\Users\lvillase\Documents\Node & Express\meadowlark\package.json for validation
-1033 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-1033 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-1033 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-1033 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-1033 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-1034 verbose cwd C:\Users\lvillase\Documents\Node & Express\meadowlark
-1035 error Windows_NT 6.1.7601
-1036 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "express-session"
-1037 error node v4.4.6
-1038 error npm  v2.15.5
-1039 error code EPEERINVALID
-1040 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
-1040 error peerinvalid Peer grunt-exec@1.0.0 wants grunt@>=0.4
-1040 error peerinvalid Peer grunt-cafe-mocha@0.1.13 wants grunt@~0.4.1
-1040 error peerinvalid Peer grunt-contrib-jshint@1.0.0 wants grunt@>=0.4.0
-1041 verbose exit [ 1, true ]
+10 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express-session\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\express3-handlebars\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\formidable\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-cafe-mocha\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-contrib-jshint\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\grunt-exec\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\imagemagick\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\jquery-file-upload-middleware\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\mocha\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\phantomjs\package.json
+22 info package.json formidable@1.0.17 No license field.
+23 info package.json grunt-cafe-mocha@0.1.13 No license field.
+24 info package.json mocha@2.5.3 No README data
+25 info package.json express3-handlebars@0.5.2 No license field.
+26 info package.json imagemagick@0.1.3 No license field.
+27 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\package.json
+28 verbose install nodemailer is installed as 4.0.1
+29 silly cache add args [ 'nodemailer', null ]
+30 verbose cache add spec nodemailer
+31 silly cache add parsed spec Result {
+31 silly cache add   raw: 'nodemailer',
+31 silly cache add   scope: null,
+31 silly cache add   name: 'nodemailer',
+31 silly cache add   rawSpec: '',
+31 silly cache add   spec: 'latest',
+31 silly cache add   type: 'tag' }
+32 silly addNamed nodemailer@latest
+33 verbose addNamed "latest" is being treated as a dist-tag for nodemailer
+34 info addNameTag [ 'nodemailer', 'latest' ]
+35 silly mapToRegistry name nodemailer
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'nodemailer',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'nodemailer',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/nodemailer
+40 verbose addNameTag registry:https://registry.npmjs.org/nodemailer not in flight; fetching
+41 verbose request uri https://registry.npmjs.org/nodemailer
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 14:27:51
+44 verbose request id 173fc9ef51d0382d
+45 verbose etag W/"59575b19-417c9"
+46 verbose lastModified Sat, 01 Jul 2017 08:19:37 GMT
+47 http request GET https://registry.npmjs.org/nodemailer
+48 http 304 https://registry.npmjs.org/nodemailer
+49 verbose headers { date: 'Fri, 07 Jul 2017 18:27:52 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   etag: 'W/"59575b19-417c9"',
+49 verbose headers   age: '253',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-cdg8724-CDG',
+49 verbose headers   'x-cache': 'HIT',
+49 verbose headers   'x-cache-hits': '1',
+49 verbose headers   'x-timer': 'S1499452073.901696,VS0,VE1',
+49 verbose headers   vary: 'Accept-Encoding' }
+50 silly get cb [ 304,
+50 silly get   { date: 'Fri, 07 Jul 2017 18:27:52 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     etag: 'W/"59575b19-417c9"',
+50 silly get     age: '253',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-cdg8724-CDG',
+50 silly get     'x-cache': 'HIT',
+50 silly get     'x-cache-hits': '1',
+50 silly get     'x-timer': 'S1499452073.901696,VS0,VE1',
+50 silly get     vary: 'Accept-Encoding' } ]
+51 verbose etag https://registry.npmjs.org/nodemailer from cache
+52 verbose get saving nodemailer to C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\registry.npmjs.org\nodemailer\.cache.json
+53 verbose correctMkdir C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+54 silly addNameTag next cb for nodemailer with tag latest
+55 silly addNamed nodemailer@4.0.1
+56 verbose addNamed "4.0.1" is a plain semver version for nodemailer
+57 silly cache afterAdd nodemailer@4.0.1
+58 verbose afterAdd C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\nodemailer\4.0.1\package\package.json not in flight; writing
+59 verbose correctMkdir C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+60 verbose afterAdd C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\nodemailer\4.0.1\package\package.json written
+61 silly install resolved [ { name: 'nodemailer',
+61 silly install resolved     version: '4.0.1',
+61 silly install resolved     description: 'Easy as cake e-mail sending from your Node.js applications',
+61 silly install resolved     main: 'lib/nodemailer.js',
+61 silly install resolved     scripts: { test: 'grunt' },
+61 silly install resolved     repository:
+61 silly install resolved      { type: 'git',
+61 silly install resolved        url: 'git+https://github.com/nodemailer/nodemailer.git' },
+61 silly install resolved     keywords: [ 'Nodemailer' ],
+61 silly install resolved     author: { name: 'Andris Reinman' },
+61 silly install resolved     license: 'MIT',
+61 silly install resolved     bugs: { url: 'https://github.com/nodemailer/nodemailer/issues' },
+61 silly install resolved     homepage: 'https://nodemailer.com/',
+61 silly install resolved     devDependencies:
+61 silly install resolved      { bunyan: '^1.8.10',
+61 silly install resolved        chai: '^3.5.0',
+61 silly install resolved        'eslint-config-nodemailer': '^1.0.0',
+61 silly install resolved        grunt: '^1.0.1',
+61 silly install resolved        'grunt-cli': '^1.2.0',
+61 silly install resolved        'grunt-eslint': '^19.0.0',
+61 silly install resolved        'grunt-mocha-test': '^0.13.2',
+61 silly install resolved        libbase64: '^0.1.0',
+61 silly install resolved        libmime: '^3.1.0',
+61 silly install resolved        libqp: '^1.1.0',
+61 silly install resolved        mocha: '^3.2.0',
+61 silly install resolved        proxy: '^0.2.4',
+61 silly install resolved        'proxy-test-server': '^1.0.0',
+61 silly install resolved        sinon: '^2.1.0',
+61 silly install resolved        'smtp-server': '^3.0.1' },
+61 silly install resolved     engines: { node: '>=6.0.0' },
+61 silly install resolved     gitHead: '8b5990c5af6b3a60fe3cef4c0492e62d68f4b9ea',
+61 silly install resolved     _id: 'nodemailer@4.0.1',
+61 silly install resolved     _shasum: 'b95864b07facee8287e8232effd6f1d56ec75ab2',
+61 silly install resolved     _from: 'nodemailer@latest',
+61 silly install resolved     _npmVersion: '3.10.10',
+61 silly install resolved     _nodeVersion: '6.10.0',
+61 silly install resolved     _npmUser: { name: 'andris', email: 'andris@kreata.ee' },
+61 silly install resolved     dist:
+61 silly install resolved      { shasum: 'b95864b07facee8287e8232effd6f1d56ec75ab2',
+61 silly install resolved        tarball: 'https://registry.npmjs.org/nodemailer/-/nodemailer-4.0.1.tgz' },
+61 silly install resolved     maintainers: [ [Object] ],
+61 silly install resolved     _npmOperationalInternal:
+61 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+61 silly install resolved        tmp: 'tmp/nodemailer-4.0.1.tgz_1492078705942_0.3458673018030822' },
+61 silly install resolved     directories: {},
+61 silly install resolved     _resolved: 'https://registry.npmjs.org/nodemailer/-/nodemailer-4.0.1.tgz',
+61 silly install resolved     readme: 'ERROR: No README data found!' } ]
+62 info install nodemailer@4.0.1 into C:\Users\lvillase\Documents\Node & Express\meadowlark
+63 info installOne nodemailer@4.0.1
+64 verbose installOne of nodemailer to C:\Users\lvillase\Documents\Node & Express\meadowlark not in flight; installing
+65 verbose correctMkdir C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+66 verbose lock using C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\_locks\nodemailer-6658cdb1ef62148d.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+67 warn engine nodemailer@4.0.1: wanted: {"node":">=6.0.0"} (current: {"node":"4.4.6","npm":"2.15.5"})
+68 silly install write writing nodemailer 4.0.1 to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+69 verbose unbuild node_modules\nodemailer
+70 info preuninstall nodemailer@4.0.1
+71 info uninstall nodemailer@4.0.1
+72 verbose unbuild rmStuff nodemailer@4.0.1 from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules
+73 info postuninstall nodemailer@4.0.1
+74 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer is being purged from base C:\Users\lvillase\Documents\Node & Express\meadowlark
+75 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+76 silly vacuum-fs purging C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+77 silly vacuum-fs quitting because other entries in C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules
+78 verbose tar unpack C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\nodemailer\4.0.1\package.tgz
+79 verbose tar unpacking to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+80 silly gentlyRm C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer is being purged
+81 verbose gentlyRm don't care about contents; nuking C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+82 silly gunzTarPerm modes [ '777', '666' ]
+83 silly gunzTarPerm extractEntry package.json
+84 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+85 silly gunzTarPerm extractEntry .npmignore
+86 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+89 silly gunzTarPerm extractEntry LICENSE
+90 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+91 silly gunzTarPerm extractEntry CHANGELOG.md
+92 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+93 silly gunzTarPerm extractEntry lib/nodemailer.js
+94 silly gunzTarPerm modified mode [ 'lib/nodemailer.js', 420, 438 ]
+95 silly gunzTarPerm extractEntry lib/qp/index.js
+96 silly gunzTarPerm modified mode [ 'lib/qp/index.js', 420, 438 ]
+97 silly gunzTarPerm extractEntry lib/dkim/index.js
+98 silly gunzTarPerm modified mode [ 'lib/dkim/index.js', 420, 438 ]
+99 silly gunzTarPerm extractEntry lib/dkim/message-parser.js
+100 silly gunzTarPerm modified mode [ 'lib/dkim/message-parser.js', 420, 438 ]
+101 silly gunzTarPerm extractEntry lib/dkim/relaxed-body.js
+102 silly gunzTarPerm modified mode [ 'lib/dkim/relaxed-body.js', 420, 438 ]
+103 silly gunzTarPerm extractEntry lib/dkim/sign.js
+104 silly gunzTarPerm modified mode [ 'lib/dkim/sign.js', 420, 438 ]
+105 silly gunzTarPerm extractEntry lib/fetch/cookies.js
+106 silly gunzTarPerm modified mode [ 'lib/fetch/cookies.js', 420, 438 ]
+107 silly gunzTarPerm extractEntry lib/fetch/index.js
+108 silly gunzTarPerm modified mode [ 'lib/fetch/index.js', 420, 438 ]
+109 silly gunzTarPerm extractEntry lib/json-transport/index.js
+110 silly gunzTarPerm modified mode [ 'lib/json-transport/index.js', 420, 438 ]
+111 silly gunzTarPerm extractEntry lib/mail-composer/index.js
+112 silly gunzTarPerm modified mode [ 'lib/mail-composer/index.js', 420, 438 ]
+113 silly gunzTarPerm extractEntry lib/mailer/index.js
+114 silly gunzTarPerm modified mode [ 'lib/mailer/index.js', 420, 438 ]
+115 silly gunzTarPerm extractEntry lib/mailer/mail-message.js
+116 silly gunzTarPerm modified mode [ 'lib/mailer/mail-message.js', 420, 438 ]
+117 silly gunzTarPerm extractEntry lib/mime-funcs/index.js
+118 silly gunzTarPerm modified mode [ 'lib/mime-funcs/index.js', 420, 438 ]
+119 silly gunzTarPerm extractEntry lib/mime-funcs/mime-types.js
+120 silly gunzTarPerm modified mode [ 'lib/mime-funcs/mime-types.js', 420, 438 ]
+121 silly gunzTarPerm extractEntry lib/mime-node/index.js
+122 silly gunzTarPerm modified mode [ 'lib/mime-node/index.js', 420, 438 ]
+123 silly gunzTarPerm extractEntry lib/mime-node/last-newline.js
+124 silly gunzTarPerm modified mode [ 'lib/mime-node/last-newline.js', 420, 438 ]
+125 silly gunzTarPerm extractEntry lib/addressparser/index.js
+126 silly gunzTarPerm modified mode [ 'lib/addressparser/index.js', 420, 438 ]
+127 silly gunzTarPerm extractEntry lib/base64/index.js
+128 silly gunzTarPerm modified mode [ 'lib/base64/index.js', 420, 438 ]
+129 silly gunzTarPerm extractEntry lib/sendmail-transport/index.js
+130 silly gunzTarPerm modified mode [ 'lib/sendmail-transport/index.js', 420, 438 ]
+131 silly gunzTarPerm extractEntry lib/sendmail-transport/le-unix.js
+132 silly gunzTarPerm modified mode [ 'lib/sendmail-transport/le-unix.js', 420, 438 ]
+133 silly gunzTarPerm extractEntry lib/sendmail-transport/le-windows.js
+134 silly gunzTarPerm modified mode [ 'lib/sendmail-transport/le-windows.js', 420, 438 ]
+135 silly gunzTarPerm extractEntry lib/ses-transport/index.js
+136 silly gunzTarPerm modified mode [ 'lib/ses-transport/index.js', 420, 438 ]
+137 silly gunzTarPerm extractEntry lib/shared/index.js
+138 silly gunzTarPerm modified mode [ 'lib/shared/index.js', 420, 438 ]
+139 silly gunzTarPerm extractEntry lib/smtp-connection/data-stream.js
+140 silly gunzTarPerm modified mode [ 'lib/smtp-connection/data-stream.js', 420, 438 ]
+141 silly gunzTarPerm extractEntry lib/smtp-connection/http-proxy-client.js
+142 silly gunzTarPerm modified mode [ 'lib/smtp-connection/http-proxy-client.js', 420, 438 ]
+143 silly gunzTarPerm extractEntry lib/smtp-connection/index.js
+144 silly gunzTarPerm modified mode [ 'lib/smtp-connection/index.js', 420, 438 ]
+145 silly gunzTarPerm extractEntry lib/smtp-pool/index.js
+146 silly gunzTarPerm modified mode [ 'lib/smtp-pool/index.js', 420, 438 ]
+147 silly gunzTarPerm extractEntry lib/smtp-pool/pool-resource.js
+148 silly gunzTarPerm modified mode [ 'lib/smtp-pool/pool-resource.js', 420, 438 ]
+149 silly gunzTarPerm extractEntry lib/smtp-transport/index.js
+150 silly gunzTarPerm modified mode [ 'lib/smtp-transport/index.js', 420, 438 ]
+151 silly gunzTarPerm extractEntry lib/stream-transport/index.js
+152 silly gunzTarPerm modified mode [ 'lib/stream-transport/index.js', 420, 438 ]
+153 silly gunzTarPerm extractEntry lib/well-known/index.js
+154 silly gunzTarPerm modified mode [ 'lib/well-known/index.js', 420, 438 ]
+155 silly gunzTarPerm extractEntry lib/well-known/services.json
+156 silly gunzTarPerm modified mode [ 'lib/well-known/services.json', 420, 438 ]
+157 silly gunzTarPerm extractEntry lib/xoauth2/index.js
+158 silly gunzTarPerm modified mode [ 'lib/xoauth2/index.js', 420, 438 ]
+159 verbose write writing to C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer\package.json
+160 info preinstall nodemailer@4.0.1
+161 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer\package.json
+162 verbose readDependencies loading dependencies from C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer\package.json
+163 silly install resolved []
+164 verbose about to build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+165 info build C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+166 info linkStuff nodemailer@4.0.1
+167 silly linkStuff nodemailer@4.0.1 has C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules as its parent node_modules
+168 verbose linkBins nodemailer@4.0.1
+169 verbose linkMans nodemailer@4.0.1
+170 verbose rebuildBundles nodemailer@4.0.1
+171 info install nodemailer@4.0.1
+172 info postinstall nodemailer@4.0.1
+173 verbose unlock done using C:\Users\MesaAyudaMx\AppData\Roaming\npm-cache\_locks\nodemailer-6658cdb1ef62148d.lock for C:\Users\lvillase\Documents\Node & Express\meadowlark\node_modules\nodemailer
+174 verbose validateInstall loading C:\Users\lvillase\Documents\Node & Express\meadowlark\package.json for validation
+175 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+175 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+175 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+175 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+175 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+176 verbose cwd C:\Users\lvillase\Documents\Node & Express\meadowlark
+177 error Windows_NT 6.1.7601
+178 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "nodemailer"
+179 error node v4.4.6
+180 error npm  v2.15.5
+181 error code EPEERINVALID
+182 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+182 error peerinvalid Peer grunt-exec@1.0.0 wants grunt@>=0.4
+182 error peerinvalid Peer grunt-cafe-mocha@0.1.13 wants grunt@~0.4.1
+182 error peerinvalid Peer grunt-contrib-jshint@1.0.0 wants grunt@>=0.4.0
+183 verbose exit [ 1, true ]
