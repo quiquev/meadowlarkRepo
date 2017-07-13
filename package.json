@@ -9,8 +9,18 @@
   "author": "Luis Enrique Villaseñor",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "express3-handlebars": "^0.5.2"
+    "express-logger": "0.0.3",
+    "express-session": "^1.15.3",
+    "express3-handlebars": "^0.5.2",
+    "formidable": "^1.1.1",
+    "jquery-file-upload-middleware": "^0.1.8",
+    "loadtest": "^2.3.0",
+    "mongoose": "^4.11.2",
+    "morgan": "^1.8.2",
+    "nodemailer": "^4.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
