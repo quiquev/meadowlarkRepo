@@ -7,6 +7,17 @@ var formidable = require('formidable');
 var jqupload = require('jquery-file-upload-middleware');
 var credentials = require('./lib/credentials.js');
 var fs = require('fs');
+var Vacation = require('./models/vacation.js');
+var VacationInSeasonListener = require('./models/vacationInSeasonListener.js');
+
+app.use(require('body-parser')());
+app.use(require('cookie-parser')(credentials.cookieSecret));
+app.use(require('express-session')({
+    resave: false,
+    saveUninitialized: false,
+    secret: credentials.cookieSecret,
+}));
+
 //var emailService = require('./lib/email.js')(credentials);
 
 // set up handlebars view engine
@@ -104,13 +115,88 @@ switch(app.get('env')){
         throw new Error('Unknown execution environment: ' + app.get('env'));
 }
 
-app.use(require('body-parser')());
-app.use(require('cookie-parser')(credentials.cookieSecret));
-app.use(require('express-session')({
-    resave: false,
-    saveUninitialized: false,
-    secret: credentials.cookieSecret,
-}));
+// initialize vacations
+Vacation.find(function(err, vacations){
+    if(vacations.length) return;
+
+    new Vacation({
+        name: 'Hood River Day Trip',
+        slug: 'hood-river-day-trip',
+        category: 'Day Trip',
+        sku: 'HR199',
+        description: 'Spend a day sailing on the Columbia and ' +
+            'enjoying craft beers in Hood River!',
+        priceInCents: 9995,
+        tags: ['day trip', 'hood river', 'sailing', 'windsurfing', 'breweries'],
+        inSeason: true,
+        maximumGuests: 16,
+        available: true,
+        packagesSold: 0,
+    }).save();
+
+    new Vacation({
+        name: 'Oregon Coast Getaway',
+        slug: 'oregon-coast-getaway',
+        category: 'Weekend Getaway',
+        sku: 'OC39',
+        description: 'Enjoy the ocean air and quaint coastal towns!',
+        priceInCents: 269995,
+        tags: ['weekend getaway', 'oregon coast', 'beachcombing'],
+        inSeason: false,
+        maximumGuests: 8,
+        available: true,
+        packagesSold: 0,
+    }).save();
+
+    new Vacation({
+        name: 'Rock Climbing in Bend',
+        slug: 'rock-climbing-in-bend',
+        category: 'Adventure',
+        sku: 'B99',
+        description: 'Experience the thrill of rock climbing in the high desert.',
+        priceInCents: 289995,
+        tags: ['weekend getaway', 'bend', 'high desert', 'rock climbing', 'hiking', 'skiing'],
+        inSeason: true,
+        requiresWaiver: true,
+        maximumGuests: 4,
+        available: false,
+        packagesSold: 0,
+        notes: 'The tour guide is currently recovering from a skiing accident.',
+    }).save();
+});
+
+app.get('/notify-me-when-in-season', function(req, res){
+    res.render('notify-me-when-in-season', { sku: req.query.sku });
+});
+
+app.post('/notify-me-when-in-season', function(req, res){
+    var alreadyListened = VacationInSeasonListener.skus.indexOf(req.body.sku);
+    console.log('Is Listened ? ', alreadyListened);
+    if(alreadyListened !== true){
+        VacationInSeasonListener.update(
+            { email: req.body.email },
+            { $push: { skus: req.body.sku } },
+            { upsert: true },
+    	    function(err){
+    	        if(err) {
+    	        	console.error(err.stack);
+    	            req.session.flash = {
+    	                type: 'danger',
+    	                intro: 'Ooops!',
+    	                message: 'There was an error processing your request.',
+    	            };
+    	            return res.redirect(303, '/vacations');
+    	        }
+    	        req.session.flash = {
+    	            type: 'success',
+    	            intro: 'Thank you!',
+    	            message: 'You will be notified when this vacation is in season.',
+    	        };
+    	        return res.redirect(303, '/vacations');
+    	    }
+    	);
+    }
+});
 
 app.use(function(req, res, next){
   res.locals.showTests = app.get('env') !== 'production' && req.query.test == '1';
@@ -239,6 +325,24 @@ app.post('/contest/vacation-photo/:year/:month', function(req, res){
             message: 'You have been entered into the contest.',
         };
         return res.redirect(303, '/contest/vacation-photo/entries');
+    });
+});
+
+app.get('/vacations', function(req, res){
+    Vacation.find({ available: true }, function(err, vacations){
+    	//var currency = req.session.currency || 'USD';
+        var context = {
+            vacations: vacations.map(function(vacation){
+                return {
+                    sku: vacation.sku,
+                    name: vacation.name,
+                    description: vacation.description,
+                    price: vacation.getDisplayPrice(),
+                    inSeason: vacation.inSeason,
+                };
+            })
+        };
+        res.render('vacations', context);
     });
 });
 
