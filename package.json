@@ -20,11 +20,15 @@
     "loadtest": "^2.3.0",
     "mongoose": "^4.11.2",
     "morgan": "^1.8.2",
-    "nodemailer": "^4.0.1"
+    "nodemailer": "^4.1.0",
+    "session-mongoose": "^0.5.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "grunt": "^1.0.1",
+    "grunt-cafe-mocha": "^0.1.13",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-exec": "^3.0.0",
     "mocha": "^2.5.3",
     "phantomjs": "^2.1.7"
   }
