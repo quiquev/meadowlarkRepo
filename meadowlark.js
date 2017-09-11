@@ -21,7 +21,10 @@ var handlebars = require('express3-handlebars').create({
             if(!this._sections) this._sections = {};
             this._sections[name] = options.fn(this);
             return null;
-        }
+        },
+		static: function (name){
+			return require('./lib/static.js').map(name);
+		}
     }
 });
 app.engine('handlebars', handlebars.engine);
@@ -167,6 +170,9 @@ Vacation.find(function(err, vacations){
     }).save();
 });
 
+// set cros for cross-site api consumption
+app.use('/api', require('cors')());
+
 // flash message middleware
 app.use(function(req, res, next){
 	// if there's a flash message, transfer
@@ -225,6 +231,19 @@ app.use(function(req,res,next){
     // no view found; pass on to 404 handler
     next();
 });
+
+// API configuration
+var Rest = require('connect-rest');
+var apiOptions = {
+    context: '/api',
+    domain: require('domain').create()
+};
+var rest = Rest.create(apiOptions);
+
+// link API into pipeline
+app.use( rest.processRequest() );
+// add API routes
+require('./handlers/api.js')(rest);
 
 // 404 catch-all handler (middleware)
 app.use(function(req, res, next){

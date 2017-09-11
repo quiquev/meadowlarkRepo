@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "connect-rest": "^2.0.0",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
     "express": "^4.14.0",
     "express-logger": "0.0.3",
     "express-session": "^1.15.3",
@@ -21,7 +23,9 @@
     "mongoose": "^4.11.2",
     "morgan": "^1.8.2",
     "nodemailer": "^4.1.0",
-    "session-mongoose": "^0.5.2"
+    "restler": "^3.4.0",
+    "session-mongoose": "^0.5.2",
+    "vhost": "^3.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
